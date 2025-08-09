@@ -4,6 +4,6 @@
 
 [node name="Label" type="Label"]
 position = Vector2(400, 300)
-text = "Little Gourmet - Game Started Successfully!"
+text = "Hello, Little Gourmet!"
 align_horizontal = 1
 align_vertical = 1

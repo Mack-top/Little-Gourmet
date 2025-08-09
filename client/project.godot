@@ -9,9 +9,8 @@
 config_version=5
 
 [application]
-
 config/name="Little Gourmet"
-config/icon="res://icon.png"
+config/icon=""
 config/main_scene="res://assets/scenes/main.tscn"
 
 [rendering]
