@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小小美食家 - Little Gourmet 详细演示</title>
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --primary-light: #81C784;
+            --primary-dark: #388E3C;
+            --secondary-color: #FF9800;
+            --accent-color: #00BCD4;
+            --background-color: #f5fff5;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: var(--primary-dark);
+            margin: 2rem 0;
+            font-size: 2rem;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px var(--shadow);
+        }
+        
+        .feature-header {
+            background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-body {
+            padding: 1.5rem;
+        }
+        
+        .feature-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        
+        .feature-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #eee;
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .screenshot-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+        
+        .screenshot-img {
+            height: 200px;
+            background: linear-gradient(45deg, var(--primary-light), var(--accent-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .screenshot-info {
+            padding: 1.5rem;
+        }
+        
+        .screenshot-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .screenshot-description {
+            color: #666;
+        }
+        
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 3rem 0;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .tech-item {
+            background: var(--card-bg);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px var(--shadow);
+            color: var(--primary-dark);
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .features, .screenshots {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-section {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">🍳 小小美食家</div>
+            <p class="tagline">专为女性玩家设计的烹饪模拟游戏，体验美食制作与餐厅经营的乐趣</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2 class="section-title">核心功能模块</h2>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">🥗</div>
+                    <h3 class="feature-title">食材管理系统</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">真实模拟食材的新鲜度、质量和库存管理</p>
+                    <ul class="feature-list">
+                        <li>食材新鲜度变化机制</li>
+                        <li>智能库存管理</li>
+                        <li>食材采购与供应商系统</li>
+                        <li>季节性食材更新</li>
+                        <li>食材营养成分追踪</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">📚</div>
+                    <h3 class="feature-title">菜谱系统</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">丰富多样的菜系与菜谱，支持自定义创作</p>
+                    <ul class="feature-list">
+                        <li>多国菜系解锁</li>
+                        <li>菜谱制作与创新</li>
+                        <li>成就系统</li>
+                        <li>菜谱收集与图鉴</li>
+                        <li>健康饮食推荐</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">🏠</div>
+                    <h3 class="feature-title">厨房装饰系统</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">个性化装饰你的厨房和餐厅，展示独特风格</p>
+                    <ul class="feature-list">
+                        <li>家具购买与布置</li>
+                        <li>主题风格设计</li>
+                        <li>装饰物品展示</li>
+                        <li>空间布局优化</li>
+                        <li>装饰成就解锁</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">🏆</div>
+                    <h3 class="feature-title">成就与社交系统</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">挑战任务，与朋友分享美食体验</p>
+                    <ul class="feature-list">
+                        <li>多样化成就类型</li>
+                        <li>排行榜系统</li>
+                        <li>好友互动功能</li>
+                        <li>社区分享机制</li>
+                        <li>称号与奖励系统</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">核心玩法</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">沉浸式烹饪体验与经营模拟</p>
+                    <ul class="feature-list">
+                        <li>食材拖放烹饪系统</li>
+                        <li>火候控制机制</li>
+                        <li>时间管理挑战</li>
+                        <li>客户满意度系统</li>
+                        <li>技能升级路径</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-header">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">模拟经营系统</h3>
+                </div>
+                <div class="feature-body">
+                    <p class="feature-description">从零开始建立你的美食帝国</p>
+                    <ul class="feature-list">
+                        <li>餐厅经营模拟</li>
+                        <li>财务管理</li>
+                        <li>员工招聘与培训</li>
+                        <li>市场推广活动</li>
+                        <li>连锁店扩张</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="section-title">技术架构</h2>
+        
+        <div class="tech-stack">
+            <div class="tech-item">Godot 4.x 引擎</div>
+            <div class="tech-item">Python 3.10+</div>
+            <div class="tech-item">前后端分离</div>
+            <div class="tech-item">PyInstaller 打包</div>
+            <div class="tech-item">事件驱动架构</div>
+        </div>
+        
+        <h2 class="section-title">游戏界面预览</h2>
+        
+        <div class="screenshots">
+            <div class="screenshot-card">
+                <div class="screenshot-img">主游戏界面</div>
+                <div class="screenshot-info">
+                    <h3 class="screenshot-title">主界面</h3>
+                    <p class="screenshot-description">游戏主界面，展示玩家信息、快速访问功能和当前任务</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card">
+                <div class="screenshot-img">烹饪操作界面</div>
+                <div class="screenshot-info">
+                    <h3 class="screenshot-title">烹饪界面</h3>
+                    <p class="screenshot-description">沉浸式烹饪体验，支持拖放操作和火候控制</p>
+                </div>
+            </div>
+            
+            <div class="screenshot-card">
+                <div class="screenshot-img">餐厅装饰界面</div>
+                <div class="screenshot-info">
+                    <h3 class="screenshot-title">装饰界面</h3>
+                    <p class="screenshot-description">个性化装饰系统，自由布置你的餐厅空间</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 class="cta-title">开始你的美食之旅</h2>
+            <p class="cta-description">立即体验《小小美食家》，开启属于你的烹饪与经营冒险！</p>
+            <a href="#" class="cta-button">下载游戏</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 小小美食家开发团队. All rights reserved.</p>
+            <p>专为女性玩家打造的健康饮食与烹饪模拟游戏</p>
+        </div>
+    </footer>
+</body>
+</html>
