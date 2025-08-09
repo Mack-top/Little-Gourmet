@@ -1,0 +1,22 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Little Gourmet"
+config/icon="res://icon.png"
+
+[physics]
+2d/thread_model=2
+
+[rendering]
+environment/default_environment/ambient_light_color=Color(0.2, 0.2, 0.2, 1)
+environment/default_environment/bg_mode=2
+environment/default_environment/background_sky_mode=1

@@ -17,22 +17,22 @@ if not exist "Godot_v4.4.1-stable_win64.exe" (
 echo Godot executable found
 echo.
 
-echo Checking for game assets...
-if not exist "client" (
-    echo Error: Game assets not found
-    echo Please make sure the client directory exists
+echo Checking for project.godot file...
+if not exist "project.godot" (
+    echo Error: project.godot not found in current directory
+    echo Please make sure project.godot exists in the project root
     pause
     exit /b 1
 )
 
-echo Game assets found
+echo project.godot found
 echo.
 
 echo Starting Little Gourmet game...
 echo.
 echo If the game window doesn't appear, check for error messages above
 echo.
-"Godot_v4.4.1-stable_win64.exe" --path client
+"Godot_v4.4.1-stable_win64.exe" --path .
 if %errorlevel% neq 0 (
     echo.
     echo Game exited with error code %errorlevel%
