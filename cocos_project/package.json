@@ -1,0 +1,33 @@
+{
+  "name": "little-gourmet",
+  "version": "1.0.0",
+  "description": "Little Gourmet Game built with Cocos Creator",
+  "main": "index.js",
+  "scripts": {
+    "start": "cocos run",
+    "build": "cocos build"
+  },
+  "author": "Little Gourmet Team",
+  "license": "MIT",
+  "dependencies": {
+    "cocos2d-html5": "^3.0.0"
+  },
+  "directories": {
+    "src": "src",
+    "assets": "assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mack-top/Little-Gourmet.git"
+  },
+  "keywords": [
+    "game",
+    "cocos",
+    "cooking",
+    "simulator"
+  ],
+  "bugs": {
+    "url": "https://github.com/Mack-top/Little-Gourmet/issues"
+  },
+  "homepage": "https://github.com/Mack-top/Little-Gourmet#readme"
+}

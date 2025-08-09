@@ -1,19 +1,10 @@
-# 小小美食家 (Little Gourmet)
+# Little Gourmet
 
-![游戏截图](docs/images/game_screenshot.png)
+Little Gourmet 是一个烹饪模拟游戏，玩家可以在游戏中学习各种食谱，收集食材，并制作美味的菜肴。
 
-## 项目介绍
+## 项目迁移通知
 
-《小小美食家》是一款专为女性玩家设计的单机做饭游戏。玩家可以在游戏中体验烹饪的乐趣，装饰自己的餐厅，与NPC互动，完成各种任务和挑战。
-
-游戏特色：
-- 丰富的菜谱系统，包含多种菜系
-- 精美的餐厅装饰系统
-- 有趣的剧情和任务
-- 社交互动功能
-- 美容养颜菜谱
-- 甜品下午茶系统
-- 轻食健康系统
+**重要**: 本项目已从 Godot 引擎迁移到 Cocos Creator 引擎。原有的 Godot 项目文件已被移除，新的 Cocos 项目位于 [cocos_project](file:///d:/0000_AI/Little-Gourmet/cocos_project) 目录中。
 
 ## 游戏图标设计
 
@@ -55,7 +46,26 @@
 - 技术要求（PNG/ICO格式、透明背景等）
 - 品牌一致性原则
 
-## 目录结构
+## 项目结构
+
+```
+Little-Gourmet/
+├── cocos_project/           # Cocos Creator 项目 (新的主要开发目录)
+│   ├── index.js             # 游戏入口点
+│   ├── package.json         # 项目配置文件
+│   ├── project.json         # Cocos 项目配置
+│   ├── README.md            # Cocos 项目说明
+│   ├── src/                 # 源代码目录
+│   │   ├── scenes/          # 游戏场景
+│   │   ├── managers/        # 管理器模块
+│   │   └── systems/         # 系统模块
+│   └── ...
+├── client/                  # 原始资源文件 (保留用于参考)
+├── server/                  # 后端服务
+├── shared/                  # 共享代码
+├── docs/                    # 文档
+└── ...
+```
 
 ## Git 提交流程
 
@@ -136,11 +146,11 @@ Kitchen/
 └── build_game.py            # 游戏打包脚本
 ```
 
-## 技术架构
-- 游戏引擎：Godot 4.x
-- 编程语言：Python 3.10+
-- 构建工具：PyInstaller
-- 项目结构：前后端分离架构
+## 技术栈
+
+- 游戏引擎: Cocos Creator
+- 编程语言: JavaScript
+- 后端服务: Python (用于用户数据和成就系统)
 
 ## 核心功能
 1. 食材管理系统（新鲜度、质量、库存）
@@ -215,21 +225,15 @@ python test_game.py
 python build_game.py
 ```
 
-## 开发指南
+## 开发计划
 
-### 项目规范
-
-1. 遵循前后端分离架构
-2. 新建文件应放在正确的目录中（client/server/shared）
-3. 代码需符合PEP8规范
-4. 添加适当的注释和文档
-
-### 添加新功能
-
-1. 在相应的目录中创建新文件（client/server/shared）
-2. 遵循现有的代码风格和架构
-3. 添加必要的测试
-4. 更新文档
+1. 完善核心烹饪机制
+2. 添加商店和货币系统
+3. 实现成就系统
+4. 增加更多的食谱和食材
+5. 设计装饰和自定义功能
+6. 实现存档系统
+7. 添加音效和背景音乐
 
 ## 贡献
 
@@ -237,4 +241,4 @@ python build_game.py
 
 ## 许可证
 
-[MIT License](LICENSE)
+本项目仅供学习和参考使用。

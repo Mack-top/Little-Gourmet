@@ -1,0 +1,25 @@
+{
+  "project_type": "javascript",
+  "debugMode": 1,
+  "showFPS": true,
+  "frameRate": 60,
+  "id": "gameCanvas",
+  "renderMode": 0,
+  "engineDir": "frameworks/cocos2d-html5",
+  "modules": [
+    "core",
+    "ui",
+    "audio"
+  ],
+  "jsList": [
+    "src/scenes/MainMenuScene.js",
+    "src/scenes/GameScene.js",
+    "src/scenes/KitchenScene.js",
+    "src/scenes/RecipeBookScene.js",
+    "src/scenes/RecipeDetailScene.js",
+    "src/scenes/InventoryScene.js",
+    "src/managers/DataManager.js",
+    "src/managers/PlayerManager.js",
+    "src/systems/CookingSystem.js"
+  ]
+}
