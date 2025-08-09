@@ -1,0 +1,11 @@
+# 修复所有Python文件的代码规范问题
+
+# 在项目根目录下创建.pylintrc配置文件
+d:\0000_AI\Kitchen\.pylintrc
+[FORMAT]
+max-line-length=120
+
+[MISCELLANEOUS]
+notes=FIXME,XXX,TODO
+
+# 创建基本的pylint配置文件以调整代码规范

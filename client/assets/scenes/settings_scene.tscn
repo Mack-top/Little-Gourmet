@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/managers/audio_manager.py" type="Script" id=1]
+[ext_resource path="res://assets/fonts/main_font.tres" type="DynamicFont" id=2]
+
+[node name="SettingsScene" type="Control"]
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.88, 0.96, 0.85, 1 )
+
+[node name="SettingsPanel" type="Panel" parent="."]
+anchor_right = 0.8
+anchor_bottom = 0.8
+margin_left = 100.0
+margin_top = 50.0
+margin_right = -100.0
+margin_bottom = -50.0
+
+[node name="PanelStyle" type="StyleBoxFlat" parent="SettingsPanel"]
+bg_color = Color( 0.9, 0.95, 0.85, 0.9 )
+border_color = Color( 0.6, 0.8, 0.5, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+text = "设置"
+align = 1
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="MusicLabel" type="Label" parent="VBoxContainer"]
+text = "音乐音量"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer"]
+min = 0.0
+max = 100.0
+value = 50.0
+size_flags_horizontal = 3
+
+[node name="SoundLabel" type="Label" parent="VBoxContainer"]
+text = "音效音量"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="SoundSlider" type="HSlider" parent="VBoxContainer"]
+min = 0.0
+max = 100.0
+value = 50.0
+size_flags_horizontal = 3
+
+[node name="ButtonContainer" type="HBoxContainer" parent="VBoxContainer"]
+size_flags_horizontal = 3
+
+[node name="SaveButton" type="Button" parent="ButtonContainer"]
+text = "保存"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="CancelButton" type="Button" parent="ButtonContainer"]
+text = "取消"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="BackButton" type="Button" parent="SettingsPanel"]
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.3
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = -40.0
+margin_right = -10.0
+margin_bottom = -10.0
+text = "返回"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )

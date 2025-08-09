@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://client/src/ui/test_dashboard.py" type="Script" id=1]
+
+[node name="TestDashboard" type="Node2D"]
+script = ExtResource( 1 )
+
+[editable path="TestDashboard"]
+script = ExtResource( 1 )

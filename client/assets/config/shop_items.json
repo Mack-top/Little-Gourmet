@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "优质面粉",
+    "category": "食材",
+    "base_price": 50,
+    "stock": 100,
+    "description": "高品质的小麦面粉，适合制作各种糕点和面食"
+  },
+  {
+    "id": 2,
+    "name": "新鲜鸡蛋",
+    "category": "食材",
+    "base_price": 30,
+    "stock": 200,
+    "description": "农家散养鸡蛋，营养丰富，口感鲜美"
+  },
+  {
+    "id": 3,
+    "name": "新鲜草莓",
+    "category": "食材",
+    "base_price": 40,
+    "stock": 80,
+    "description": "当季新鲜草莓，酸甜可口，适合制作甜品"
+  },
+  {
+    "id": 4,
+    "name": "进口巧克力",
+    "category": "食材",
+    "base_price": 80,
+    "stock": 50,
+    "description": "比利时进口黑巧克力，可可含量70%，烘焙专用"
+  },
+  {
+    "id": 5,
+    "name": "香草精",
+    "category": "调料",
+    "base_price": 60,
+    "stock": 60,
+    "description": "纯天然香草精，提升甜品风味的必备调料"
+  },
+  {
+    "id": 6,
+    "name": "奶油芝士",
+    "category": "食材",
+    "base_price": 70,
+    "stock": 40,
+    "description": "新鲜奶油芝士，质地细腻，适合制作芝士蛋糕"
+  },
+  {
+    "id": 7,
+    "name": "新鲜柠檬",
+    "category": "食材",
+    "base_price": 25,
+    "stock": 120,
+    "description": "新鲜柠檬，富含维C，可用于调味和制作饮品"
+  },
+  {
+    "id": 8,
+    "name": "蜂蜜",
+    "category": "调料",
+    "base_price": 55,
+    "stock": 70,
+    "description": "天然成熟蜂蜜，甜度适中，营养丰富"
+  },
+  {
+    "id": 9,
+    "name": "椰浆",
+    "category": "食材",
+    "base_price": 45,
+    "stock": 60,
+    "description": "泰国进口椰浆，浓郁香甜，适合制作东南亚风味甜品"
+  },
+  {
+    "id": 10,
+    "name": "抹茶粉",
+    "category": "食材",
+    "base_price": 90,
+    "stock": 30,
+    "description": "日本宇治抹茶粉，色泽翠绿，味道清香微苦"
+  }
+]

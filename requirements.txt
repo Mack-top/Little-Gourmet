@@ -1,0 +1,26 @@
+# Kitchen Story 项目依赖
+
+# 核心依赖
+godot-python>=0.1.0  # Godot Python绑定
+
+# 开发和测试依赖
+pytest>=6.0.0
+pytest-cov>=2.10.0
+flake8>=3.8.0
+pylint>=2.6.0
+unittest-xml-reporting>=3.0.0
+
+# 性能分析工具
+line-profiler>=3.0.0
+memory-profiler>=0.58.0
+
+# 日志系统
+structlog>=20.0.0
+colorlog>=4.0.0
+
+# 打包依赖
+pyinstaller>=4.0
+
+# 其他工具
+setuptools>=50.0.0
+wheel>=0.35.0

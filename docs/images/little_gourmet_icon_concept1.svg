@@ -1,0 +1,35 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="#FFE4B5" stroke="#FFA07A" stroke-width="8"/>
+  
+  <!-- 厨师帽 -->
+  <path d="M100,60 Q128,30 156,60 L148,80 Q128,70 108,80 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+  
+  <!-- 脸部 -->
+  <circle cx="128" cy="100" r="15" fill="#FFDBAC"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="120" cy="95" r="3" fill="#333333"/>
+  <circle cx="136" cy="95" r="3" fill="#333333"/>
+  
+  <!-- 微笑 -->
+  <path d="M115,110 Q128,120 141,110" fill="none" stroke="#333333" stroke-width="2"/>
+  
+  <!-- 围裙 -->
+  <path d="M90,115 L90,180 Q90,190 100,190 L156,190 Q166,190 166,180 L166,115 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+  
+  <!-- 围裙口袋 -->
+  <rect x="110" y="140" width="36" height="25" rx="5" fill="#F0F8FF" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- 食材装饰 -->
+  <circle cx="115" cy="150" r="5" fill="#FF6347"/> <!-- 番茄 -->
+  <circle cx="130" cy="155" r="4" fill="#32CD32"/> <!-- 青菜 -->
+  <circle cx="145" cy="150" r="5" fill="#FFD700"/> <!-- 柠檬 -->
+  
+  <!-- 锅铲 -->
+  <rect x="170" y="130" width="4" height="40" fill="#C0C0C0" transform="rotate(20 170 130)"/>
+  <ellipse cx="175" cy="130" rx="8" ry="3" fill="#C0C0C0" transform="rotate(20 175 130)"/>
+  
+  <!-- 文字 -->
+  <text x="128" y="220" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#FF6347" font-weight="bold">美食家</text>
+</svg>

@@ -1,0 +1,83 @@
+[
+  {
+    "id": "first_cook",
+    "name": "第一次烹饪",
+    "description": "完成你的第一个菜谱",
+    "reward": {
+      "currency": 50,
+      "experience": 10
+    },
+    "icon": "first_cook_icon"
+  },
+  {
+    "id": "quick_cook",
+    "name": "快手厨师",
+    "description": "在30秒内完成一个菜谱",
+    "reward": {
+      "currency": 100,
+      "experience": 20
+    },
+    "icon": "quick_cook_icon"
+  },
+  {
+    "id": "perfect_dish",
+    "name": "完美主义者",
+    "description": "制作出完美的菜肴",
+    "reward": {
+      "currency": 150,
+      "experience": 30
+    },
+    "icon": "perfect_dish_icon"
+  },
+  {
+    "id": "collector",
+    "name": "收藏家",
+    "description": "收集10个不同的菜谱",
+    "reward": {
+      "currency": 200,
+      "experience": 50
+    },
+    "icon": "collector_icon"
+  },
+  {
+    "id": "master_chef",
+    "name": "大厨",
+    "description": "制作100道菜",
+    "reward": {
+      "currency": 500,
+      "experience": 100,
+      "title": "大厨"
+    },
+    "icon": "master_chef_icon"
+  },
+  {
+    "id": "taster",
+    "name": "美食家",
+    "description": "品尝20道不同的菜",
+    "reward": {
+      "currency": 150,
+      "experience": 40
+    },
+    "icon": "taster_icon"
+  },
+  {
+    "id": "businessman",
+    "name": "企业家",
+    "description": "通过菜谱商店赚取1000金币",
+    "reward": {
+      "currency": 300,
+      "experience": 80
+    },
+    "icon": "businessman_icon"
+  },
+  {
+    "id": "diverse_cook",
+    "name": "多样厨师",
+    "description": "制作5种不同菜系的菜",
+    "reward": {
+      "currency": 250,
+      "experience": 60
+    },
+    "icon": "diverse_cook_icon"
+  }
+]

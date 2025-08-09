@@ -1,0 +1,31 @@
+// 创建成就系统初始化场景
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://assets/scripts/achievement_system_initializer_gd.gd" type="Script" id=1]
+
+[node name="AchievementSystemInitializerGDScript" type="Node" script_ext_resource=1]
+
+// 成就系统初始化场景
+// 用于在游戏启动时自动初始化成就系统
+
+// 初始化成就系统
+func _ready():
+    // 确保只有一个实例存在
+    if get_node("/root/AchievementSystemInitializerGDScript") != null:
+        queue_free()
+        return
+    
+    // 设置为全局节点
+    set_process(false)
+    set_physics_process(false)
+    add_to_group("achievement_system_initializer_gdscript")
+
+// 静态方法获取实例
+static func get_instance():
+    var initializer = get_node("/root/AchievementSystemInitializerGDScript")
+    if not initializer:
+        // 如果不存在，加载并创建
+        var scene = preload("res://assets/scenes/achievement_system_initializer.tscn")
+        initializer = scene.instance()
+        get_tree().get_root().add_child(initializer)
+    return initializer

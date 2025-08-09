@@ -1,0 +1,38 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="#FFB6C1" stroke="#FF69B4" stroke-width="8"/>
+  
+  <!-- 盘子 -->
+  <circle cx="128" cy="110" r="40" fill="#FFFFFF" stroke="#DDD" stroke-width="3"/>
+  
+  <!-- 蛋糕 -->
+  <ellipse cx="128" cy="100" rx="30" ry="15" fill="#FFB6C1"/>
+  <ellipse cx="128" cy="85" rx="25" ry="12" fill="#FFC0CB"/>
+  <ellipse cx="128" cy="72" rx="20" ry="10" fill="#FFD700"/>
+  
+  <!-- 装饰 -->
+  <circle cx="115" cy="95" r="4" fill="#FF6347"/>
+  <circle cx="140" cy="95" r="4" fill="#FF6347"/>
+  <circle cx="128" cy="65" r="5" fill="#FF6347"/>
+  
+  <!-- 叉子 -->
+  <rect x="150" y="90" width="3" height="40" fill="#C0C0C0"/>
+  <rect x="148" y="90" width="2" height="8" fill="#C0C0C0" transform="rotate(-20 148 90)"/>
+  <rect x="153" y="92" width="2" height="8" fill="#C0C0C0" transform="rotate(20 153 92)"/>
+  
+  <!-- 小厨师形象 -->
+  <circle cx="128" cy="170" r="20" fill="#FFE4B5"/>
+  
+  <!-- 厨师帽 -->
+  <path d="M110,150 Q128,135 146,150 L140,160 Q128,155 116,160 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="122" cy="165" r="3" fill="#333333"/>
+  <circle cx="134" cy="165" r="3" fill="#333333"/>
+  
+  <!-- 微笑 -->
+  <path d="M120,175 Q128,180 136,175" fill="none" stroke="#333333" stroke-width="2"/>
+  
+  <!-- 文字 -->
+  <text x="128" y="220" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#8B4513" font-weight="bold">美食家</text>
+</svg>

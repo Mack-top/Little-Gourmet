@@ -1,0 +1,79 @@
+[
+  {
+    "id": "mq_001",
+    "title": "初出茅庐",
+    "description": "制作你的第一道菜",
+    "type": "main",
+    "requirements": [
+      {"type": "dishes_made", "value": 1}
+    ],
+    "rewards": [
+      {"type": "currency", "amount": 100},
+      {"type": "experience", "amount": 50}
+    ],
+    "is_main_quest": true,
+    "prerequisite_quests": []
+  },
+  {
+    "id": "mq_002",
+    "title": "小有名气",
+    "description": "达到5级厨师等级",
+    "type": "main",
+    "requirements": [
+      {"type": "level", "value": 5}
+    ],
+    "rewards": [
+      {"type": "currency", "amount": 500},
+      {"type": "experience", "amount": 200}
+    ],
+    "is_main_quest": true,
+    "prerequisite_quests": ["mq_001"]
+  },
+  {
+    "id": "mq_003",
+    "title": "餐厅起步",
+    "description": "建立你的第一家餐厅",
+    "type": "main",
+    "requirements": [
+      {"type": "restaurant_level", "value": 1}
+    ],
+    "rewards": [
+      {"type": "currency", "amount": 1000},
+      {"type": "experience", "amount": 500}
+    ],
+    "is_main_quest": true,
+    "prerequisite_quests": ["mq_002"]
+  },
+  {
+    "id": "mq_004",
+    "title": "声名鹊起",
+    "description": "餐厅达到3级并获得80以上声誉",
+    "type": "main",
+    "requirements": [
+      {"type": "restaurant_level", "value": 3},
+      {"type": "reputation", "value": 80}
+    ],
+    "rewards": [
+      {"type": "currency", "amount": 5000},
+      {"type": "experience", "amount": 1000}
+    ],
+    "is_main_quest": true,
+    "prerequisite_quests": ["mq_003"]
+  },
+  {
+    "id": "mq_005",
+    "title": "厨神之路",
+    "description": "成为传奇厨师并拥有连锁餐厅",
+    "type": "main",
+    "requirements": [
+      {"type": "chef_title", "value": "传奇厨师"},
+      {"type": "restaurant_level", "value": 5}
+    ],
+    "rewards": [
+      {"type": "currency", "amount": 50000},
+      {"type": "experience", "amount": 10000}
+    ],
+    "is_main_quest": true,
+    "prerequisite_quests": ["mq_004"]
+  }
+]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://assets/scripts/npc_chat_ui.py" type="Script" id=1]
+
+[node name="NPCChatScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/kitchen_bg.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="Title" type="Label"]
+position.x = 400.0
+position.y = 20.0
+text = "与NPC聊天"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+size.x = 800.0
+size.y = 40.0
+
+[node name="NPCInfo" type="HBoxContainer"]
+position.x = 50.0
+position.y = 70.0
+size.x = 700.0
+size.y = 60.0
+
+[node name="NPCAvatar" type="TextureRect"]
+texture = ExtResource( "res://assets/textures/ui/npc_avatar.png" )
+size.x = 60.0
+size.y = 60.0
+
+[node name="NPCName" type="Label"]
+text = "主厨大师"
+offset_left = 70.0
+
+[node name="ChatHistory" type="VBoxContainer"]
+position.x = 50.0
+position.y = 140.0
+size.x = 700.0
+size.y = 300.0
+
+[node name="ViolationWarning" type="Label"]
+position.x = 50.0
+position.y = 450.0
+size.x = 700.0
+size.y = 30.0
+text = ""
+add_color_override("font_color", Color(1, 0, 0, 1))  # 红色
+hide = true
+
+[node name="MessageInput" type="LineEdit"]
+position.x = 50.0
+position.y = 480.0
+size.x = 600.0
+size.y = 30.0
+placeholder_text = "输入消息..."
+
+[node name="SendButton" type="Button"]
+position.x = 660.0
+position.y = 480.0
+text = "发送"
+size.x = 90.0
+size.y = 30.0
+
+[node name="BackButton" type="Button"]
+position.x = 350.0
+position.y = 520.0
+text = "返回"
+size.x = 100.0
+size.y = 40.0

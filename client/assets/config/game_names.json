@@ -1,0 +1,32 @@
+[
+  {
+    "id": "tasty_tales",
+    "name": "美味传说",
+    "description": "在一个充满魔法食材的世界中，通过烹饪来书写属于你的美味传说",
+    "theme": "奇幻美食"
+  },
+  {
+    "id": "flavor_quest",
+    "name": "风味探秘",
+    "description": "踏上寻找世界独特风味的冒险之旅，解锁失传的古老食谱",
+    "theme": "探险美食"
+  },
+  {
+    "id": "culinary_empire",
+    "name": "料理帝国",
+    "description": "从一家小餐厅开始，建立属于你的全球料理帝国",
+    "theme": "经营模拟"
+  },
+  {
+    "id": "soul_kitchen",
+    "name": "灵魂厨房",
+    "description": "用食物治愈人心，在这家神奇的餐厅里，每道菜都有特殊的力量",
+    "theme": "治愈系"
+  },
+  {
+    "id": "master_chef_journey",
+    "name": "大厨之路",
+    "description": "从学徒到传奇大厨，体验完整的厨师成长历程",
+    "theme": "成长模拟"
+  }
+]

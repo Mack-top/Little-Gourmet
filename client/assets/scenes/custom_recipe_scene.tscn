@@ -1,0 +1,138 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://assets/scripts/custom_recipe_ui.py" type="Script" id=1]
+
+[node name="CustomRecipeScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/kitchen_bg.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="Title" type="Label"]
+position.x = 400.0
+position.y = 20.0
+text = "创建你的专属菜谱"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+
+[node name="RecipeNameLabel" type="Label"]
+position.x = 100.0
+position.y = 70.0
+text = "菜谱名称:"
+
+[node name="RecipeNameEdit" type="LineEdit"]
+position.x = 200.0
+position.y = 70.0
+size.x = 300.0
+size.y = 30.0
+
+[node name="CategoryLabel" type="Label"]
+position.x = 100.0
+position.y = 110.0
+text = "菜系分类:"
+
+[node name="CategoryOptions" type="OptionButton"]
+position.x = 200.0
+position.y = 110.0
+size.x = 200.0
+size.y = 30.0
+
+[node name="DescriptionLabel" type="Label"]
+position.x = 100.0
+position.y = 150.0
+text = "菜谱描述:"
+
+[node name="DescriptionEdit" type="TextEdit"]
+position.x = 200.0
+position.y = 150.0
+size.x = 400.0
+size.y = 60.0
+
+[node name="DifficultyLabel" type="Label"]
+position.x = 100.0
+position.y = 230.0
+text = "难度等级:"
+
+[node name="DifficultySlider" type="HSlider"]
+position.x = 200.0
+position.y = 230.0
+size.x = 200.0
+size.y = 20.0
+min_value = 1.0
+max_value = 10.0
+value = 5.0
+step = 1.0
+
+[node name="DifficultyValueLabel" type="Label"]
+position.x = 420.0
+position.y = 230.0
+text = "5"
+
+[node name="TimeRequiredLabel" type="Label"]
+position.x = 100.0
+position.y = 260.0
+text = "制作时间(分钟):"
+
+[node name="TimeRequiredSpinBox" type="SpinBox"]
+position.x = 200.0
+position.y = 260.0
+size.x = 100.0
+size.y = 30.0
+min_value = 1.0
+max_value = 300.0
+value = 30.0
+step = 1.0
+
+[node name="IngredientsLabel" type="Label"]
+position.x = 100.0
+position.y = 300.0
+text = "所需食材:"
+
+[node name="IngredientsContainer" type="VBoxContainer"]
+position.x = 200.0
+position.y = 300.0
+size.x = 400.0
+size.y = 150.0
+
+[node name="AddIngredientButton" type="Button"]
+position.x = 200.0
+position.y = 460.0
+text = "添加食材"
+
+[node name="StepsLabel" type="Label"]
+position.x = 100.0
+position.y = 500.0
+text = "制作步骤:"
+
+[node name="StepsContainer" type="VBoxContainer"]
+position.x = 200.0
+position.y = 500.0
+size.x = 500.0
+size.y = 200.0
+
+[node name="AddStepButton" type="Button"]
+position.x = 200.0
+position.y = 710.0
+text = "添加步骤"
+
+[node name="CreateButton" type="Button"]
+position.x = 300.0
+position.y = 750.0
+text = "创建菜谱"
+size.x = 100.0
+size.y = 40.0
+
+[node name="CancelButton" type="Button"]
+position.x = 450.0
+position.y = 750.0
+text = "取消"
+size.x = 100.0
+size.y = 40.0
+
+[node name="MessageLabel" type="Label"]
+position.x = 300.0
+position.y = 800.0
+text = ""
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER

@@ -1,0 +1,618 @@
+zi'jiiji[
+  {
+    "id": 101,
+    "name": "草莓",
+    "category": "水果",
+    "freshness_duration": 24,
+    "base_price": 10,
+    "season": "spring"
+  },
+  {
+    "id": 201,
+    "name": "面粉",
+    "category": "谷物",
+    "freshness_duration": 72,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 301,
+    "name": "鸡蛋",
+    "category": "蛋类",
+    "freshness_duration": 48,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 401,
+    "name": "米饭",
+    "category": "谷物",
+    "freshness_duration": 96,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 501,
+    "name": "生鱼片",
+    "category": "海鲜",
+    "freshness_duration": 12,
+    "base_price": 25,
+    "season": "winter"
+  },
+  {
+    "id": 601,
+    "name": "海苔",
+    "category": "海产品",
+    "freshness_duration": 120,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 701,
+    "name": "牛奶",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 12,
+    "season": "all"
+  },
+  {
+    "id": 801,
+    "name": "黄油",
+    "category": "乳制品",
+    "freshness_duration": 120,
+    "base_price": 20,
+    "season": "all"
+  },
+  {
+    "id": 901,
+    "name": "芝士",
+    "category": "乳制品",
+    "freshness_duration": 96,
+    "base_price": 18,
+    "season": "all"
+  },
+  {
+    "id": 1001,
+    "name": "胡萝卜",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 7,
+    "season": "spring"
+  },
+  {
+    "id": 1101,
+    "name": "西红柿",
+    "category": "蔬菜",
+    "freshness_duration": 72,
+    "base_price": 6,
+    "season": "summer"
+  },
+  {
+    "id": 1201,
+    "name": "洋葱",
+    "category": "蔬菜",
+    "freshness_duration": 96,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 1301,
+    "name": "大蒜",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 4,
+    "season": "all"
+  },
+  {
+    "id": 1401,
+    "name": "橄榄油",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 1501,
+    "name": "盐",
+    "category": "调料",
+    "freshness_duration": 1000,
+    "base_price": 2,
+    "season": "all"
+  },
+  {
+    "id": 1601,
+    "name": "黑胡椒",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 1701,
+    "name": "意大利面",
+    "category": "谷物",
+    "freshness_duration": 120,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 1801,
+    "name": "罗勒叶",
+    "category": "香料",
+    "freshness_duration": 48,
+    "base_price": 5,
+    "season": "summer"
+  },
+  {
+    "id": 1901,
+    "name": "帕玛森芝士",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 20,
+    "season": "all"
+  },
+  {
+    "id": 2001,
+    "name": "牛肉末",
+    "category": "肉类",
+    "freshness_duration": 24,
+    "base_price": 25,
+    "season": "all"
+  },
+  {
+    "id": 2101,
+    "name": "意大利香料",
+    "category": "香料",
+    "freshness_duration": 120,
+    "base_price": 10,
+    "season": "all"
+  },
+  {
+    "id": 2201,
+    "name": "番茄酱",
+    "category": "调料",
+    "freshness_duration": 96,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 2301,
+    "name": "橄榄",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 12,
+    "season": "all"
+  },
+  {
+    "id": 2401,
+    "name": "蘑菇",
+    "category": "蔬菜",
+    "freshness_duration": 96,
+    "base_price": 8,
+    "season": "autumn"
+  },
+  {
+    "id": 2501,
+    "name": "青椒",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 6,
+    "season": "summer"
+  },
+  {
+    "id": 2601,
+    "name": "红椒",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 7,
+    "season": "summer"
+  },
+  {
+    "id": 2701,
+    "name": "白葡萄酒",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 30,
+    "season": "all"
+  },
+  {
+    "id": 2801,
+    "name": "鸡肉",
+    "category": "肉类",
+    "freshness_duration": 36,
+    "base_price": 20,
+    "season": "all"
+  },
+  {
+    "id": 2901,
+    "name": "培根",
+    "category": "肉类",
+    "freshness_duration": 48,
+    "base_price": 18,
+    "season": "all"
+  },
+  {
+    "id": 3001,
+    "name": "鲜奶油",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 3101,
+    "name": "猪肉",
+    "category": "肉类",
+    "freshness_duration": 36,
+    "base_price": 18,
+    "season": "all"
+  },
+  {
+    "id": 3201,
+    "name": "豆瓣酱",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 3301,
+    "name": "生抽",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 3401,
+    "name": "老抽",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 3501,
+    "name": "料酒",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 10,
+    "season": "all"
+  },
+  {
+    "id": 3601,
+    "name": "淀粉",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 3701,
+    "name": "醋",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 4,
+    "season": "all"
+  },
+  {
+    "id": 3801,
+    "name": "糖",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 3,
+    "season": "all"
+  },
+  {
+    "id": 3901,
+    "name": "花椒",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 4001,
+    "name": "干辣椒",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 4101,
+    "name": "生姜",
+    "category": "蔬菜",
+    "freshness_duration": 48,
+    "base_price": 4,
+    "season": "all"
+  },
+  {
+    "id": 4201,
+    "name": "香油",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 4301,
+    "name": "豆腐",
+    "category": "豆制品",
+    "freshness_duration": 24,
+    "base_price": 3,
+    "season": "all"
+  },
+  {
+    "id": 4401,
+    "name": "白菜",
+    "category": "蔬菜",
+    "freshness_duration": 96,
+    "base_price": 2,
+    "season": "winter"
+  },
+  {
+    "id": 4501,
+    "name": "粉条",
+    "category": "谷物",
+    "freshness_duration": 360,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 4601,
+    "name": "虾米",
+    "category": "海鲜",
+    "freshness_duration": 48,
+    "base_price": 20,
+    "season": "all"
+  },
+  {
+    "id": 4701,
+    "name": "蚝油",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 12,
+    "season": "all"
+  },
+  {
+    "id": 4801,
+    "name": "生菜",
+    "category": "蔬菜",
+    "freshness_duration": 72,
+    "base_price": 3,
+    "season": "all"
+  },
+  {
+    "id": 4901,
+    "name": "鲮鱼罐头",
+    "category": "海鲜",
+    "freshness_duration": 360,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 5001,
+    "name": "豆豉",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 5101,
+    "name": "鸡翅",
+    "category": "肉类",
+    "freshness_duration": 36,
+    "base_price": 22,
+    "season": "all"
+  },
+  {
+    "id": 5201,
+    "name": "鸡腿",
+    "category": "肉类",
+    "freshness_duration": 36,
+    "base_price": 25,
+    "season": "all"
+  },
+  {
+    "id": 5301,
+    "name": "面包糠",
+    "category": "调料",
+    "freshness_duration": 120,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 5401,
+    "name": "辣椒粉",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 5501,
+    "name": "孜然粉",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 5601,
+    "name": "五香粉",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 5701,
+    "name": "咖喱粉",
+    "category": "香料",
+    "freshness_duration": 360,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 5801,
+    "name": "红茶",
+    "category": "饮品",
+    "freshness_duration": 360,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 5901,
+    "name": "绿茶",
+    "category": "饮品",
+    "freshness_duration": 360,
+    "base_price": 12,
+    "season": "all"
+  },
+  {
+    "id": 6001,
+    "name": "珍珠",
+    "category": "食材",
+    "freshness_duration": 48,
+    "base_price": 10,
+    "season": "all"
+  },
+  {
+    "id": 6101,
+    "name": "椰果",
+    "category": "食材",
+    "freshness_duration": 48,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 6201,
+    "name": "布丁",
+    "category": "食材",
+    "freshness_duration": 24,
+    "base_price": 12,
+    "season": "all"
+  },
+  {
+    "id": 6301,
+    "name": "芋圆",
+    "category": "食材",
+    "freshness_duration": 48,
+    "base_price": 10,
+    "season": "all"
+  },
+  {
+    "id": 6401,
+    "name": "红豆",
+    "category": "谷物",
+    "freshness_duration": 96,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 6501,
+    "name": "绿豆",
+    "category": "谷物",
+    "freshness_duration": 96,
+    "base_price": 5,
+    "season": "all"
+  },
+  {
+    "id": 6601,
+    "name": "木薯粉",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 6701,
+    "name": "红糖",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 6801,
+    "name": "炼乳",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 15,
+    "season": "all"
+  },
+  {
+    "id": 6901,
+    "name": "淡奶油",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 18,
+    "season": "all"
+  },
+  {
+    "id": 7001,
+    "name": "燕麦",
+    "category": "谷物",
+    "freshness_duration": 96,
+    "base_price": 7,
+    "season": "all"
+  },
+  {
+    "id": 7101,
+    "name": "玉米淀粉",
+    "category": "调料",
+    "freshness_duration": 360,
+    "base_price": 6,
+    "season": "all"
+  },
+  {
+    "id": 7201,
+    "name": "起司",
+    "category": "乳制品",
+    "freshness_duration": 72,
+    "base_price": 20,
+    "season": "all"
+  },
+  {
+    "id": 7301,
+    "name": "番茄沙司",
+    "category": "调料",
+    "freshness_duration": 96,
+    "base_price": 8,
+    "season": "all"
+  },
+  {
+    "id": 7401,
+    "name": "沙拉酱",
+    "category": "调料",
+    "freshness_duration": 72,
+    "base_price": 10,
+    "season": "all"
+  },
+  {
+    "id": 7501,
+    "name": "黄瓜",
+    "category": "蔬菜",
+    "freshness_duration": 72,
+    "base_price": 3,
+    "season": "summer"
+  },
+  {
+    "id": 7601,
+    "name": "土豆",
+    "category": "蔬菜",
+    "freshness_duration": 120,
+    "base_price": 2,
+    "season": "all"
+  },
+  {
+    "id": 7701,
+    "name": "年糕",
+    "category": "谷物",
+    "freshness_duration": 48,
+    "base_price": 8,
+    "season": "all"
+  }
+]

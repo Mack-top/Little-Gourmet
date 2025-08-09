@@ -1,0 +1,31 @@
+// 创建全局初始化场景
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://src/global_initializer.py" type="Script" id=1]
+
+[node name="GlobalInitializer" type="Node" script_ext_resource=1]
+
+// 全局初始化器
+// 用于在游戏启动时初始化所有全局系统
+
+// 初始化全局系统
+func _ready():
+    // 确保只有一个实例存在
+    if get_node("/root/GlobalInitializer") != null:
+        queue_free()
+        return
+    
+    // 设置为全局节点
+    set_process(false)
+    set_physics_process(false)
+    add_to_group("global_initializer")
+
+// 获取全局初始化器实例
+static func get_global_initializer():
+    var global_initializer = get_node("/root/GlobalInitializer")
+    if not global_initializer:
+        // 如果不存在，加载并创建
+        var scene = preload("res://assets/scenes/global_initializer.tscn")
+        global_initializer = scene.instance()
+        get_tree().get_root().add_child(global_initializer)
+    return global_initializer

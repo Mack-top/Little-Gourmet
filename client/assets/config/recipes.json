@@ -1,0 +1,600 @@
+[
+  {
+    "id": 1,
+    "name": "草莓蛋糕",
+    "category": "烘焙",
+    "description": "美味的草莓蛋糕，口感松软香甜",
+    "ingredients": [
+      {"item_id": 101, "quantity": 3},
+      {"item_id": 201, "quantity": 2},
+      {"item_id": 301, "quantity": 1},
+      {"item_id": 701, "quantity": 1}
+    ],
+    "steps": [
+      "将面粉和鸡蛋混合搅拌",
+      "加入切碎的草莓",
+      "倒入模具并放入烤箱烘烤",
+      "装饰表面"
+    ],
+    "difficulty": 3,
+    "time_required": 60,
+    "unlock_conditions": {"type": "level", "value": 3},
+    "base_reward": {"experience": 30, "coins": 50}
+  },
+  {
+    "id": 2,
+    "name": "寿司拼盘",
+    "category": "日式",
+    "description": "精美的寿司拼盘，包含多种口味",
+    "ingredients": [
+      {"item_id": 401, "quantity": 4},
+      {"item_id": 501, "quantity": 6},
+      {"item_id": 601, "quantity": 1}
+    ],
+    "steps": [
+      "准备醋饭",
+      "切制新鲜食材",
+      "在海苔上铺米饭",
+      "摆放生鱼片并卷起",
+      "切成小段"
+    ],
+    "difficulty": 5,
+    "time_required": 45,
+    "unlock_conditions": {"type": "story_progress", "value": 5},
+    "base_reward": {"experience": 50, "coins": 80}
+  },
+  {
+    "id": 3,
+    "name": "奶油蘑菇汤",
+    "category": "汤类",
+    "description": "浓郁的奶油蘑菇汤，温暖你的心",
+    "ingredients": [
+      {"item_id": 701, "quantity": 2},
+      {"item_id": 1001, "quantity": 3},
+      {"item_id": 801, "quantity": 1}
+    ],
+    "steps": [
+      "切碎胡萝卜和蘑菇",
+      "用黄油炒制蔬菜",
+      "加入牛奶和调料煮制",
+      "使用搅拌机打碎成汤"
+    ],
+    "difficulty": 2,
+    "time_required": 30,
+    "unlock_conditions": {"type": "level", "value": 1},
+    "base_reward": {"experience": 20, "coins": 30}
+  },
+  {
+    "id": 4,
+    "name": "芝士蛋糕",
+    "category": "烘焙",
+    "description": "浓郁芝士制作的蛋糕，口感丝滑",
+    "ingredients": [
+      {"item_id": 901, "quantity": 3},
+      {"item_id": 201, "quantity": 1},
+      {"item_id": 301, "quantity": 2}
+    ],
+    "steps": [
+      "制作蛋糕底并烘烤",
+      "混合芝士和鸡蛋",
+      "倒入模具冷藏凝固",
+      "装饰表面"
+    ],
+    "difficulty": 4,
+    "time_required": 120,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 40, "coins": 70}
+  },
+  {
+    "id": 5,
+    "name": "经典意大利肉酱面",
+    "category": "意式",
+    "description": "正宗的意大利肉酱面，香气扑鼻，口感丰富",
+    "ingredients": [
+      {"item_id": 2001, "quantity": 2},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 1101, "quantity": 2},
+      {"item_id": 2201, "quantity": 1},
+      {"item_id": 1701, "quantity": 1},
+      {"item_id": 1401, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1},
+      {"item_id": 2101, "quantity": 1}
+    ],
+    "steps": [
+      "将洋葱和大蒜切碎",
+      "在锅中加热橄榄油，炒香洋葱和大蒜至透明",
+      "加入牛肉末炒至变色",
+      "加入切碎的西红柿和番茄酱",
+      "加入盐、黑胡椒和意大利香料调味",
+      "小火慢炖肉酱20分钟",
+      "同时煮意大利面至al dente（有嚼劲）",
+      "将煮好的意大利面与肉酱混合",
+      "撒上帕玛森芝士和罗勒叶装饰"
+    ],
+    "difficulty": 6,
+    "time_required": 45,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 60, "coins": 100}
+  },
+  {
+    "id": 6,
+    "name": "意式番茄罗勒沙拉",
+    "category": "意式",
+    "description": "清新的意式番茄罗勒沙拉，色彩鲜艳，口感清爽",
+    "ingredients": [
+      {"item_id": 1101, "quantity": 3},
+      {"item_id": 1801, "quantity": 10},
+      {"item_id": 1901, "quantity": 1},
+      {"item_id": 1401, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1}
+    ],
+    "steps": [
+      "将西红柿切成厚片",
+      "将罗勒叶洗净沥干",
+      "在盘子中交替摆放西红柿片和罗勒叶",
+      "撒上撕碎的帕玛森芝士",
+      "淋上橄榄油",
+      "撒上盐和黑胡椒调味"
+    ],
+    "difficulty": 2,
+    "time_required": 15,
+    "unlock_conditions": {"type": "level", "value": 2},
+    "base_reward": {"experience": 20, "coins": 35}
+  },
+  {
+    "id": 7,
+    "name": "法式洋葱汤",
+    "category": "法式",
+    "description": "经典的法式洋葱汤，香甜浓郁，配以烤面包和芝士",
+    "ingredients": [
+      {"item_id": 1201, "quantity": 4},
+      {"item_id": 1401, "quantity": 2},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1},
+      {"item_id": 901, "quantity": 1},
+      {"item_id": 201, "quantity": 1}
+    ],
+    "steps": [
+      "将洋葱切成细丝",
+      "在锅中加入橄榄油和黄油，小火加热",
+      "放入洋葱丝，小火慢炒约30分钟至焦糖色",
+      "加入面粉搅拌均匀",
+      "慢慢加入热水，搅拌防止结块",
+      "加入盐和黑胡椒调味，煮15分钟",
+      "盛入碗中，放上烤面包片",
+      "在面包片上撒上芝士，放入烤箱烤至芝士融化起泡"
+    ],
+    "difficulty": 7,
+    "time_required": 60,
+    "unlock_conditions": {"type": "level", "value": 6},
+    "base_reward": {"experience": 70, "coins": 120}
+  },
+  {
+    "id": 8,
+    "name": "宫保鸡丁",
+    "category": "川菜",
+    "description": "经典的川菜宫保鸡丁，酸甜微辣，口感丰富",
+    "ingredients": [
+      {"item_id": 2801, "quantity": 2},
+      {"item_id": 2501, "quantity": 2},
+      {"item_id": 2601, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 2201, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1},
+      {"item_id": 2701, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡肉切成小丁，用盐和淀粉腌制10分钟",
+      "将青椒、红椒切丁，大蒜切片",
+      "调制宫保汁：生抽、老抽、糖、醋、料酒、淀粉和水混合",
+      "锅中放油，烧至六成热，下鸡丁滑散至变色",
+      "下入大蒜片和青红椒丁翻炒",
+      "倒入宫保汁，大火快速翻炒均匀",
+      "最后淋入香油，炒匀即可出锅"
+    ],
+    "difficulty": 6,
+    "time_required": 30,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 60, "coins": 110}
+  },
+  {
+    "id": 9,
+    "name": "麻婆豆腐",
+    "category": "川菜",
+    "description": "经典的川菜麻婆豆腐，麻辣鲜香，豆腐嫩滑",
+    "ingredients": [
+      {"item_id": 4301, "quantity": 1},
+      {"item_id": 3201, "quantity": 2},
+      {"item_id": 3101, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3901, "quantity": 1},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 3501, "quantity": 1},
+      {"item_id": 3801, "quantity": 1}
+    ],
+    "steps": [
+      "将豆腐切成2厘米见方的块，放入加了少许盐的沸水中氽一下，去除豆腥味",
+      "将牛肉剁成末，蒜苗切段，姜和大蒜切末",
+      "炒锅内放油烧至六成热，下牛肉末炒散炒熟",
+      "下豆瓣酱、姜末、蒜末炒出红油",
+      "加入鲜汤或水，放入豆腐块，加盐、酱油、料酒",
+      "小火煮3-5分钟入味，用湿淀粉勾芡",
+      "最后撒上花椒面和蒜苗段即可"
+    ],
+    "difficulty": 5,
+    "time_required": 25,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 50, "coins": 90}
+  },
+  {
+    "id": 10,
+    "name": "红烧肉",
+    "category": "家常菜",
+    "description": "经典的家常红烧肉，色泽红亮，肥而不腻",
+    "ingredients": [
+      {"item_id": 3101, "quantity": 2},
+      {"item_id": 3401, "quantity": 1},
+      {"item_id": 3301, "quantity": 2},
+      {"item_id": 3801, "quantity": 2},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3501, "quantity": 1},
+      {"item_id": 1501, "quantity": 1}
+    ],
+    "steps": [
+      "将五花肉切成3厘米见方的块，焯水去腥",
+      "炒锅内放少许油，加入冰糖炒出糖色",
+      "下入五花肉块翻炒至上色",
+      "加入生抽、老抽、料酒继续翻炒",
+      "加入洋葱块、姜片和足量热水",
+      "大火烧开后转小火慢炖40分钟",
+      "最后大火收汁，至汤汁浓稠即可"
+    ],
+    "difficulty": 6,
+    "time_required": 60,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 60, "coins": 100}
+  },
+  {
+    "id": 11,
+    "name": "鱼香肉丝",
+    "category": "川菜",
+    "description": "经典的川菜鱼香肉丝，酸甜适口，肉丝滑嫩",
+    "ingredients": [
+      {"item_id": 3101, "quantity": 2},
+      {"item_id": 2501, "quantity": 2},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 3401, "quantity": 1},
+      {"item_id": 3701, "quantity": 1},
+      {"item_id": 3801, "quantity": 1},
+      {"item_id": 3601, "quantity": 1}
+    ],
+    "steps": [
+      "将猪肉切成丝，用盐、料酒、淀粉腌制10分钟",
+      "将青椒、洋葱切丝，姜蒜切末",
+      "调制鱼香汁：生抽、老抽、醋、糖、淀粉和水混合",
+      "锅中放油烧热，下肉丝滑散至变色盛起",
+      "锅中留底油，下姜蒜末爆香，再下豆瓣酱炒出红油",
+      "下青椒丝、洋葱丝翻炒断生",
+      "倒入肉丝和鱼香汁，大火快速翻炒均匀",
+      "炒匀即可出锅"
+    ],
+    "difficulty": 7,
+    "time_required": 30,
+    "unlock_conditions": {"type": "level", "value": 6},
+    "base_reward": {"experience": 70, "coins": 120}
+  },
+  {
+    "id": 12,
+    "name": "剁椒鱼头",
+    "category": "湘菜",
+    "description": "经典的湘菜剁椒鱼头，鲜辣开胃，鱼肉鲜嫩",
+    "ingredients": [
+      {"item_id": 501, "quantity": 1},
+      {"item_id": 4001, "quantity": 2},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 3501, "quantity": 1},
+      {"item_id": 3801, "quantity": 1}
+    ],
+    "steps": [
+      "将鱼头洗净，从中间劈开但不要切断",
+      "用盐、料酒抹遍鱼头内外，腌制15分钟",
+      "将姜蒜切末，洋葱切丝铺在盘底",
+      "将鱼头放在洋葱丝上，均匀撒上剁椒",
+      "再撒上姜蒜末，淋上少许油和生抽",
+      "放入蒸锅，大火蒸15-20分钟",
+      "出锅后撒上葱花即可"
+    ],
+    "difficulty": 6,
+    "time_required": 40,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 60, "coins": 110}
+  },
+  {
+    "id": 13,
+    "name": "白切鸡",
+    "category": "粤菜",
+    "description": "经典的粤菜白切鸡，皮爽肉滑，原汁原味",
+    "ingredients": [
+      {"item_id": 2801, "quantity": 1},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3501, "quantity": 1},
+      {"item_id": 1501, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡洗净，去除内脏和多余脂肪",
+      "锅中加水烧开，放入姜片、葱段和料酒",
+      "提着鸡头将鸡身放入开水中浸烫3次，每次约10秒",
+      "然后将整只鸡放入水中，保持微沸状态浸煮15-20分钟",
+      "熄火后不要揭开锅盖，继续焖20分钟",
+      "将鸡捞起立即放入冰水中冷却",
+      "切块装盘，配姜蓉蘸料食用"
+    ],
+    "difficulty": 5,
+    "time_required": 60,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 50, "coins": 95}
+  },
+  {
+    "id": 14,
+    "name": "回锅肉",
+    "category": "川菜",
+    "description": "经典的川菜回锅肉，肥瘦相间，香辣下饭",
+    "ingredients": [
+      {"item_id": 3101, "quantity": 2},
+      {"item_id": 4801, "quantity": 2},
+      {"item_id": 1201, "quantity": 1},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3201, "quantity": 2},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 3501, "quantity": 1},
+      {"item_id": 3801, "quantity": 1}
+    ],
+    "steps": [
+      "将五花肉放入冷水锅中，加姜片、葱段、料酒煮至筷子能插透",
+      "捞起肉晾凉，切成薄片",
+      "生菜洗净备用，姜蒜切片，洋葱切块",
+      "炒锅放油，下肉片小火煸炒至出油、肉片微卷",
+      "下豆瓣酱炒出红油，再下姜蒜片炒香",
+      "下洋葱块翻炒断生，加入生抽、糖调味",
+      "最后下生菜炒至断生即可出锅"
+    ],
+    "difficulty": 6,
+    "time_required": 35,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 60, "coins": 105}
+  },
+  {
+    "id": 15,
+    "name": "蚝油生菜",
+    "category": "粤菜",
+    "description": "经典的粤菜蚝油生菜，清淡爽口，营养丰富",
+    "ingredients": [
+      {"item_id": 4801, "quantity": 1},
+      {"item_id": 4701, "quantity": 2},
+      {"item_id": 1301, "quantity": 2},
+      {"item_id": 4101, "quantity": 1},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 3801, "quantity": 1},
+      {"item_id": 1501, "quantity": 1}
+    ],
+    "steps": [
+      "将生菜洗净，一分为二但不要切断",
+      "锅中烧开水，加少许盐和油，下生菜焯水10秒",
+      "捞起沥干水分，摆盘",
+      "炒锅放油，下姜蒜末爆香",
+      "加入蚝油、生抽、糖和少许水，小火煮开",
+      "用水淀粉勾芡至浓稠",
+      "将芡汁淋在生菜上即可"
+    ],
+    "difficulty": 3,
+    "time_required": 15,
+    "unlock_conditions": {"type": "level", "value": 2},
+    "base_reward": {"experience": 30, "coins": 50}
+  },
+  {
+    "id": 16,
+    "name": "糖醋里脊",
+    "category": "家常菜",
+    "description": "经典的家常糖醋里脊，外酥内嫩，酸甜可口",
+    "ingredients": [
+      {"item_id": 2801, "quantity": 2},
+      {"item_id": 3601, "quantity": 2},
+      {"item_id": 3701, "quantity": 1},
+      {"item_id": 3801, "quantity": 2},
+      {"item_id": 3301, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 201, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡胸肉切成条状，用盐腌制10分钟",
+      "用面粉、淀粉和适量水调成糊状，将鸡肉条裹上糊",
+      "锅中放油烧至六成热，下鸡肉条炸至表面金黄",
+      "捞起沥油，待油温升高后复炸一次",
+      "调制糖醋汁：醋、糖、生抽、盐、淀粉和水混合",
+      "锅中留少许油，倒入糖醋汁炒匀",
+      "倒入炸好的里脊肉，快速翻炒均匀即可出锅"
+    ],
+    "difficulty": 5,
+    "time_required": 30,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 50, "coins": 85}
+  },
+  {
+    "id": 17,
+    "name": "炸鸡翅",
+    "category": "街头小吃",
+    "description": "香脆可口的炸鸡翅，外酥内嫩，是夜市中最受欢迎的小吃之一",
+    "ingredients": [
+      {"item_id": 5101, "quantity": 1},
+      {"item_id": 201, "quantity": 1},
+      {"item_id": 3601, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1},
+      {"item_id": 5401, "quantity": 1},
+      {"item_id": 5501, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡翅洗净，用刀在表面划几刀以便入味",
+      "用盐、黑胡椒、辣椒粉、孜然粉腌制鸡翅30分钟",
+      "将面粉和淀粉按1:1比例混合，加入少许盐和黑胡椒",
+      "将腌制好的鸡翅裹上面粉混合物",
+      "锅中倒入足够的油，烧至七成热",
+      "下鸡翅中小火炸至表面金黄，约8-10分钟",
+      "捞起沥油，稍凉后即可食用"
+    ],
+    "difficulty": 4,
+    "time_required": 40,
+    "unlock_conditions": {"type": "level", "value": 3},
+    "base_reward": {"experience": 40, "coins": 75}
+  },
+  {
+    "id": 18,
+    "name": "炸串",
+    "category": "夜市小吃",
+    "description": "各式各样的炸串，荤素搭配，香辣可口，是夜市的灵魂小吃",
+    "ingredients": [
+      {"item_id": 2801, "quantity": 1},
+      {"item_id": 7601, "quantity": 1},
+      {"item_id": 2401, "quantity": 1},
+      {"item_id": 7501, "quantity": 1},
+      {"item_id": 201, "quantity": 1},
+      {"item_id": 3601, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 5401, "quantity": 1},
+      {"item_id": 5501, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡肉切块，土豆切块，蘑菇洗净，黄瓜切片",
+      "用竹签将各种食材串好",
+      "将面粉和淀粉按1:1比例混合，加入盐、辣椒粉、孜然粉调成糊状",
+      "将串好的食材裹上面糊",
+      "锅中倒入足够的油，烧至七成热",
+      "下食材串中小火炸至表面金黄",
+      "捞起沥油，撒上辣椒粉和孜然粉即可"
+    ],
+    "difficulty": 5,
+    "time_required": 35,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 50, "coins": 90}
+  },
+  {
+    "id": 19,
+    "name": "珍珠奶茶",
+    "category": "商业街小吃",
+    "description": "香滑奶茶配上Q弹珍珠，是年轻人最爱的饮品",
+    "ingredients": [
+      {"item_id": 5801, "quantity": 1},
+      {"item_id": 701, "quantity": 1},
+      {"item_id": 6801, "quantity": 1},
+      {"item_id": 6001, "quantity": 1},
+      {"item_id": 3801, "quantity": 1}
+    ],
+    "steps": [
+      "将红茶用热水冲泡5分钟，过滤出茶汤",
+      "在锅中加入牛奶和炼乳，小火加热至微沸",
+      "将煮好的珍珠用冷水冲一下，沥干备用",
+      "将茶汤和牛奶混合，根据口味加入适量糖调味",
+      "将奶茶倒入杯中，加入珍珠即可"
+    ],
+    "difficulty": 3,
+    "time_required": 15,
+    "unlock_conditions": {"type": "level", "value": 2},
+    "base_reward": {"experience": 30, "coins": 60}
+  },
+  {
+    "id": 20,
+    "name": "炸鸡排",
+    "category": "商业街小吃",
+    "description": "大块鸡排裹上面包糠炸制，外酥内嫩，香气扑鼻",
+    "ingredients": [
+      {"item_id": 5201, "quantity": 1},
+      {"item_id": 5301, "quantity": 1},
+      {"item_id": 3601, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 1601, "quantity": 1},
+      {"item_id": 5401, "quantity": 1}
+    ],
+    "steps": [
+      "将鸡腿去骨，用刀背轻轻拍打使其厚度均匀",
+      "用盐、黑胡椒腌制鸡排20分钟",
+      "将淀粉和面包糠分别放在两个盘子里",
+      "先将鸡排裹上一层淀粉，再裹上面包糠",
+      "锅中倒入足够的油，烧至七成热",
+      "下鸡排中小火炸8-10分钟至两面金黄",
+      "捞起切块，撒上辣椒粉即可食用"
+    ],
+    "difficulty": 5,
+    "time_required": 30,
+    "unlock_conditions": {"type": "level", "value": 4},
+    "base_reward": {"experience": 50, "coins": 85}
+  },
+  {
+    "id": 21,
+    "name": "章鱼小丸子",
+    "category": "夜市小吃",
+    "description": "日式街头小吃，外皮酥脆，内里软嫩，配上章鱼块和木鱼花",
+    "ingredients": [
+      {"item_id": 201, "quantity": 1},
+      {"item_id": 7101, "quantity": 1},
+      {"item_id": 301, "quantity": 1},
+      {"item_id": 4601, "quantity": 1},
+      {"item_id": 7301, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 5401, "quantity": 1}
+    ],
+    "steps": [
+      "将面粉、玉米淀粉、鸡蛋、水和盐混合调成面糊",
+      "在章鱼烧锅中刷油，倒入面糊至八分满",
+      "放入章鱼米、虾米，用竹签转动使面糊成球状",
+      "继续加热至表面金黄，内部熟透",
+      "盛起后淋上番茄沙司和沙拉酱",
+      "撒上木鱼花和海苔粉即可"
+    ],
+    "difficulty": 6,
+    "time_required": 25,
+    "unlock_conditions": {"type": "level", "value": 5},
+    "base_reward": {"experience": 60, "coins": 100}
+  },
+  {
+    "id": 22,
+    "name": "烤冷面",
+    "category": "街头小吃",
+    "description": "东北特色街头小吃，酸甜辣咸一应俱全",
+    "ingredients": [
+      {"item_id": 7701, "quantity": 1},
+      {"item_id": 2801, "quantity": 1},
+      {"item_id": 7401, "quantity": 1},
+      {"item_id": 7301, "quantity": 1},
+      {"item_id": 3801, "quantity": 1},
+      {"item_id": 1501, "quantity": 1},
+      {"item_id": 5401, "quantity": 1}
+    ],
+    "steps": [
+      "在铁板上刷油，放入冷面煎至底部微黄",
+      "用铲子辅助将冷面翻面",
+      "打入鸡蛋摊匀，撒上鸡肉丝",
+      "刷上沙拉酱和番茄沙司",
+      "撒上洋葱丝和香菜",
+      "将冷面折叠成长条状，撒上辣椒粉即可"
+    ],
+    "difficulty": 5,
+    "time_required": 15,
+    "unlock_conditions": {"type": "level", "value": 3},
+    "base_reward": {"experience": 50, "coins": 80}
+  }
+]

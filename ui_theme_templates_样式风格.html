@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐厅养成游戏UI样式模板</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .theme-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .theme-card {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .theme-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .theme-title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .theme-content {
+            margin-bottom: 20px;
+        }
+        
+        .color-palette {
+            display: flex;
+            margin: 15px 0;
+        }
+        
+        .color-box {
+            flex: 1;
+            height: 40px;
+            margin: 0 2px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: white;
+            text-shadow: 0 0 2px black;
+        }
+        
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background-color: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* 粉色温馨风格 */
+        .pink-theme {
+            background: linear-gradient(135deg, #f9c5d1 0%, #f8a5c2 100%);
+            border: 2px solid #f280bf;
+        }
+        
+        .pink-theme .theme-title {
+            color: #d44d8c;
+        }
+        
+        .pink-theme .btn-primary {
+            color: #d44d8c;
+        }
+        
+        .pink-theme .btn-secondary {
+            color: #d44d8c;
+        }
+        
+        /* 清新田园风格 */
+        .pastel-theme {
+            background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+            border: 3px solid #4cc933;
+        }
+        
+        .pastel-theme .theme-title {
+            color: #2e7d32;
+        }
+        
+        .pastel-theme .btn-primary {
+            color: #2e7d32;
+        }
+        
+        .pastel-theme .btn-secondary {
+            color: #2e7d32;
+        }
+        
+        /* 优雅紫色风格 */
+        .purple-theme {
+            background: linear-gradient(135deg, #d1c4e9 0%, #b39ddb 100%);
+            border: 2px solid #664499;
+        }
+        
+        .purple-theme .theme-title {
+            color: #4527a0;
+        }
+        
+        .purple-theme .btn-primary {
+            color: #4527a0;
+        }
+        
+        .purple-theme .btn-secondary {
+            color: #4527a0;
+        }
+        
+        .details {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .details h2 {
+            color: #ff6b6b;
+            border-bottom: 2px solid #ffccd5;
+            padding-bottom: 10px;
+        }
+        
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .principle-card {
+            background-color: #fff5f7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .principle-card h3 {
+            color: #e91e63;
+            margin-top: 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>餐厅养成游戏UI样式模板</h1>
+        <p class="description">为提升女性玩家体验而设计的三种UI风格模板</p>
+        
+        <div class="theme-container">
+            <!-- 粉色温馨风格 -->
+            <div class="theme-card pink-theme">
+                <h2 class="theme-title">粉色温馨风格</h2>
+                <div class="theme-content">
+                    <p>营造温馨、浪漫的游戏氛围，适合主菜单和角色信息界面</p>
+                    <div class="color-palette">
+                        <div class="color-box" style="background-color: #FAA8E8;">#FAA8E8</div>
+                        <div class="color-box" style="background-color: #F280BF;">#F280BF</div>
+                        <div class="color-box" style="background-color: #FFFFFF;">#FFFFFF</div>
+                        <div class="color-box" style="background-color: #FFF0F5;">#FFF0F5</div>
+                    </div>
+                    <p><strong>设计特点：</strong></p>
+                    <ul>
+                        <li>圆润的边角设计 (10px)</li>
+                        <li>温馨的视觉感受</li>
+                        <li>突出主要操作按钮</li>
+                    </ul>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-primary">主要操作</button>
+                    <button class="btn btn-secondary">次要操作</button>
+                </div>
+            </div>
+            
+            <!-- 清新田园风格 -->
+            <div class="theme-card pastel-theme">
+                <h2 class="theme-title">清新田园风格</h2>
+                <div class="theme-content">
+                    <p>自然清新的视觉体验，适合游戏主界面和食材商店</p>
+                    <div class="color-palette">
+                        <div class="color-box" style="background-color: #99F585;">#99F585</div>
+                        <div class="color-box" style="background-color: #4CC933;">#4CC933</div>
+                        <div class="color-box" style="background-color: #E8F5E9;">#E8F5E9</div>
+                        <div class="color-box" style="background-color: #C8E6C9;">#C8E6C9</div>
+                    </div>
+                    <p><strong>设计特点：</strong></p>
+                    <ul>
+                        <li>更大的边角半径 (15px)</li>
+                        <li>自然清新的视觉感受</li>
+                        <li>明亮且不刺眼的配色方案</li>
+                    </ul>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-primary">主要操作</button>
+                    <button class="btn btn-secondary">次要操作</button>
+                </div>
+            </div>
+            
+            <!-- 优雅紫色风格 -->
+            <div class="theme-card purple-theme">
+                <h2 class="theme-title">优雅紫色风格</h2>
+                <div class="theme-content">
+                    <p>优雅且神秘的视觉体验，适合设置和成就系统</p>
+                    <div class="color-palette">
+                        <div class="color-box" style="background-color: #C8B8F0;">#C8B8F0</div>
+                        <div class="color-box" style="background-color: #664499;">#664499</div>
+                        <div class="color-box" style="background-color: #EDE7F6;">#EDE7F6</div>
+                        <div class="color-box" style="background-color: #D1C4E9;">#D1C4E9</div>
+                    </div>
+                    <p><strong>设计特点：</strong></p>
+                    <ul>
+                        <li>中等边角半径 (12px)</li>
+                        <li>优雅且神秘的视觉感受</li>
+                        <li>高级感的配色方案</li>
+                    </ul>
+                </div>
+                <div class="button-container">
+                    <button class="btn btn-primary">主要操作</button>
+                    <button class="btn btn-secondary">次要操作</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="details">
+            <h2>设计原则</h2>
+            <div class="principles">
+                <div class="principle-card">
+                    <h3>柔和配色</h3>
+                    <p>使用柔和、不刺眼的颜色搭配，减少视觉疲劳，营造舒适的游戏环境。</p>
+                </div>
+                <div class="principle-card">
+                    <h3>圆润元素</h3>
+                    <p>采用圆角设计，营造温馨友好的界面氛围，符合女性玩家审美偏好。</p>
+                </div>
+                <div class="principle-card">
+                    <h3>清晰层次</h3>
+                    <p>通过颜色深浅和大小对比，建立清晰的视觉层次，提升用户体验。</p>
+                </div>
+                <div class="principle-card">
+                    <h3>一致性</h3>
+                    <p>保持整个游戏界面风格的统一性，确保玩家在不同界面间切换时的连贯体验。</p>
+                </div>
+            </div>
+            
+            <h2>使用说明</h2>
+            <p>请从以上三种模板中选择合适的样式，我们将基于选中的模板对整个游戏的UI进行统一优化。</p>
+            <p>这些模板文件可以直接在Godot编辑器中打开预览，并且可以根据需要调整颜色、边角半径等参数。</p>
+        </div>
+        
+        <footer>
+            <p>餐厅养成游戏UI设计 | 专为提升女性玩家体验而设计</p>
+        </footer>
+    </div>
+</body>
+</html>

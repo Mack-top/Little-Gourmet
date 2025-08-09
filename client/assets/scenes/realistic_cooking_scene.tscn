@@ -1,0 +1,74 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://assets/scripts/realistic_cooking_ui.py" type="Script" id=1]
+
+[node name="RealisticCookingScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/kitchen_bg.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="RecipeName" type="Label"]
+position.x = 400.0
+position.y = 50.0
+text = "制作菜谱: "
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+
+[node name="StepDescription" type="Label"]
+position.x = 400.0
+position.y = 100.0
+text = "步骤描述"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+vertical_alignment = 1    # VERTICAL_ALIGNMENT_TOP
+size.x = 600.0
+size.y = 100.0
+autowrap_mode = 1  # AUTOWRAP_WORD
+
+[node name="StepProgressBar" type="ProgressBar"]
+position.x = 200.0
+position.y = 220.0
+size.x = 400.0
+size.y = 20.0
+value = 0.0
+max_value = 100.0
+
+[node name="StepProgressLabel" type="Label"]
+position.x = 200.0
+position.y = 200.0
+text = "当前步骤进度"
+
+[node name="TotalProgressBar" type="ProgressBar"]
+position.x = 200.0
+position.y = 270.0
+size.x = 400.0
+size.y = 20.0
+value = 0.0
+max_value = 100.0
+
+[node name="TotalProgressLabel" type="Label"]
+position.x = 200.0
+position.y = 250.0
+text = "总体制作进度"
+
+[node name="TimerLabel" type="Label"]
+position.x = 380.0
+position.y = 300.0
+text = "剩余时间: 00:00"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+
+[node name="NextStepButton" type="Button"]
+position.x = 300.0
+position.y = 350.0
+text = "下一步"
+size.x = 100.0
+size.y = 40.0
+
+[node name="CancelButton" type="Button"]
+position.x =420.0
+position.y = 350.0
+text = "取消"
+size.x = 100.0
+size.y = 40.0

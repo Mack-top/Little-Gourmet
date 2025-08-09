@@ -1,0 +1,32 @@
+{
+  "music": {
+    "background": "res://assets/sounds/music/background.ogg",
+    "menu": "res://assets/sounds/music/menu.ogg",
+    "shop": "res://assets/sounds/music/shop.ogg"
+  },
+  "sounds": {
+    "ui": {
+      "button_click": "res://assets/sounds/ui/button_click.wav",
+      "hover": "res://assets/sounds/ui/hover.wav"
+    },
+    "cooking": {
+      "complete": "res://assets/sounds/cooking/complete.wav",
+      "sizzle": "res://assets/sounds/cooking/sizzle.wav",
+      "chop": "res://assets/sounds/cooking/chop.wav"
+    },
+    "ingredient": {
+      "select": "res://assets/sounds/ingredient/select.wav",
+      "drop": "res://assets/sounds/ingredient/drop.wav"
+    },
+    "achievement": {
+      "unlock": "res://assets/sounds/achievement/unlock.wav"
+    },
+    "shop": {
+      "purchase": "res://assets/sounds/shop/purchase.wav"
+    }
+  },
+  "default_volumes": {
+    "music": 0.5,
+    "sound": 0.7
+  }
+}

@@ -1,0 +1,50 @@
+// 创建全局初始化器Python接口场景
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://src/global_initializer_python_interface.py" type="Script" id=1]
+
+[node name="GlobalInitializerPythonInterface" type="Node" script_ext_resource=1]
+
+// 全局初始化器Python接口场景
+// 用于在GDScript中访问基于Python的全局初始化功能
+
+// 初始化全局系统
+func _ready():
+    // 确保只有一个实例存在
+    if get_node("/root/GlobalInitializerPythonInterface") != null:
+        queue_free()
+        return
+    
+    // 设置为全局节点
+    set_process(false)
+    set_physics_process(false)
+    add_to_group("global_initializer_python_interface")
+
+// 获取全局初始化器实例
+static func get_global_initializer():
+    var global_initializer = get_node("/root/GlobalInitializerPythonInterface")
+    if not global_initializer:
+        // 如果不存在，加载并创建
+        var scene = preload("res://assets/scenes/global_initializer_python_interface.tscn")
+        global_initializer = scene.instance()
+        get_tree().get_root().add_child(global_initializer)
+    return global_initializer
+
+// 初始化所有全局系统
+static func initialize_global_systems() -> void:
+    var initializer = get_global_initializer()
+    if initializer:
+        initializer.initialize_global_systems()
+
+// 加载全局配置
+static func load_global_config() -> Dictionary:
+    var initializer = get_global_initializer()
+    if initializer:
+        return initializer.load_global_config()
+    return null
+
+// 保存全局配置
+static func save_global_config(config_data) -> void:
+    var initializer = get_global_initializer()
+    if initializer:
+        initializer.save_global_config(config_data)

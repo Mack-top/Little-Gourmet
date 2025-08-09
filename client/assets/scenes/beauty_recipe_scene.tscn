@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://assets/scripts/beauty_recipe_ui.py" type="Script" id=1]
+
+[node name="BeautyRecipeScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/kitchen_bg.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="Title" type="Label"]
+position.x = 400.0
+position.y = 20.0
+text = "美容养颜菜谱"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+size.x = 800.0
+size.y = 40.0
+
+[node name="BeautyPointsLabel" type="Label"]
+position.x = 650.0
+position.y = 25.0
+text = "美丽值: 0"
+
+[node name="RecipeList" type="VBoxContainer"]
+position.x = 50.0
+position.y = 80.0
+size.x = 700.0
+size.y = 200.0
+
+[node name="RecipeDetails" type="VBoxContainer"]
+position.x = 50.0
+position.y = 300.0
+size.x = 700.0
+size.y = 350.0
+
+[node name="MakeButton" type="Button"]
+position.x = 300.0
+position.y = 670.0
+text = "制作菜谱"
+size.x = 100.0
+size.y = 40.0
+
+[node name="BackButton" type="Button"]
+position.x = 450.0
+position.y = 670.0
+text = "返回"
+size.x = 100.0
+size.y = 40.0

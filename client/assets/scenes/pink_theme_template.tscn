@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/fonts/main_font.tres" type="DynamicFont" id=1]
+
+[node name="PinkThemeContainer" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 0.0
+margin_bottom = 0.0
+
+[node name="PanelStyle" type="StyleBoxFlat" parent="."]
+bg_color = Color( 0.98, 0.85, 0.92, 1 )
+border_color = Color( 0.95, 0.5, 0.75, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+text = "粉色温馨主题"
+align = 1
+valign = 1
+custom_fonts/font = ExtResource( 1 )
+custom_colors/font_color = Color( 0.8, 0.2, 0.5, 1 )
+
+[node name="ButtonContainer" type="HBoxContainer" parent="VBoxContainer"]
+size_flags_horizontal = 3
+
+[node name="PrimaryButton" type="Button" parent="ButtonContainer"]
+text = "主要操作"
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0.9, 0.9, 0.9, 1 )
+
+[node name="SecondaryButton" type="Button" parent="ButtonContainer"]
+text = "次要操作"
+custom_colors/font_color = Color( 0.8, 0.2, 0.5, 1 )
+custom_colors/font_color_hover = Color( 0.9, 0.3, 0.6, 1 )
+custom_colors/font_color_pressed = Color( 0.7, 0.1, 0.4, 1 )

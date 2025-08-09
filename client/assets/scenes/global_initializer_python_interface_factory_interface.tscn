@@ -1,0 +1,50 @@
+// 创建全局初始化器Python接口实现工厂接口场景
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://src/i_global_initializer_python_interface_factory.py" type="Script" id=1]
+
+[node name="GlobalInitializerPythonInterfaceFactoryInterface" type="Node" script_ext_resource=1]
+
+// 全局初始化器Python接口实现工厂接口
+// 用于访问全局初始化器接口实现工厂实例
+
+// 初始化全局系统
+func _ready():
+    // 确保只有一个实例存在
+    if get_node("/root/GlobalInitializerPythonInterfaceFactoryInterface") != null:
+        queue_free()
+        return
+    
+    // 设置为全局节点
+    set_process(false)
+    set_physics_process(false)
+    add_to_group("global_initializer_python_interface_factory_interface")
+
+// 获取全局初始化器接口实现工厂实例
+static func get_initializer_factory_interface():
+    var factory_interface = get_node("/root/GlobalInitializerPythonInterfaceFactoryInterface")
+    if not factory_interface:
+        // 如果不存在，加载并创建
+        var scene = preload("res://assets/scenes/global_initializer_python_interface_factory_interface.tscn")
+        factory_interface = scene.instance()
+        get_tree().get_root().add_child(factory_interface)
+    return factory_interface
+
+// 初始化所有全局系统
+static func initialize_global_systems() -> void:
+    var factory_interface = get_initializer_factory_interface()
+    if factory_interface:
+        factory_interface.initialize_global_systems()
+
+// 加载全局配置
+static func load_global_config() -> Dictionary:
+    var factory_interface = get_initializer_factory_interface()
+    if factory_interface:
+        return factory_interface.load_global_config()
+    return null
+
+// 保存全局配置
+static func save_global_config(config_data) -> void:
+    var factory_interface = get_initializer_factory_interface()
+    if factory_interface:
+        factory_interface.save_global_config(config_data)

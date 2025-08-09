@@ -1,0 +1,101 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource path="res://assets/scripts/recipe_rating_ui.py" type="Script" id=1]
+
+[node name="RecipeRatingScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/kitchen_bg.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="Title" type="Label"]
+position.x = 400.0
+position.y = 20.0
+text = "菜谱评分与排行"
+horizontal_alignment = 1  # HORIZONTAL_ALIGNMENT_CENTER
+size.x = 800.0
+size.y = 40.0
+
+[node name="RecipeList" type="VBoxContainer"]
+position.x = 50.0
+position.y = 80.0
+size.x = 700.0
+size.y = 200.0
+
+[node name="RecipeDetails" type="VBoxContainer"]
+position.x = 50.0
+position.y = 300.0
+size.x = 400.0
+size.y = 200.0
+
+[node name="RatingArea" type="VBoxContainer"]
+position.x = 500.0
+position.y = 300.0
+size.x = 250.0
+size.y = 200.0
+
+[node name="RatingLabel" type="Label"]
+text = "评分: 5.0"
+
+[node name="RatingSlider" type="HSlider"]
+min_value = 0.0
+max_value = 10.0
+value = 5.0
+step = 0.1
+
+[node name="RateButton" type="Button"]
+text = "评分"
+size.x = 100.0
+size.y = 30.0
+
+[node name="ExtraPointsLabel" type="Label"]
+text = "购买额外加分:"
+
+[node name="ExtraPointsInput" type="LineEdit"]
+placeholder_text = "输入加分点数"
+size.x = 150.0
+size.y = 30.0
+
+[node name="BuyExtraPointsButton" type="Button"]
+text = "购买"
+size.x = 100.0
+size.y = 30.0
+
+[node name="ClaimRewardButton" type="Button"]
+position.x = 500.0
+position.y = 520.0
+text = "领取周奖励"
+size.x = 100.0
+size.y = 30.0
+
+[node name="ExportButton" type="Button"]
+position.x = 650.0
+position.y = 520.0
+text = "导出数据"
+size.x = 100.0
+size.y = 30.0
+
+[node name="StoreRankingButton" type="Button"]
+position.x = 575.0
+position.y = 560.0
+text = "更新商店排行"
+size.x = 100.0
+size.y = 30.0
+
+[node name="MessageLabel" type="Label"]
+position.x = 50.0
+position.y = 570.0
+size.x = 700.0
+size.y = 30.0
+text = ""
+add_color_override("font_color", Color(1, 0, 0, 1))  # 红色
+
+[node name="BackButton" type="Button"]
+position.x = 350.0
+position.y = 600.0
+text = "返回"
+size.x = 100.0
+size.y = 40.0

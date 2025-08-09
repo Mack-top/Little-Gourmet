@@ -1,0 +1,33 @@
+// 创建加载存档场景文件
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://src/i_game_manager.py" type="Script" id=1]
+
+[node name="LoadScene" type="Control" script_ext_resource=1]
+
+[node name="Background" type="Sprite2D"]
+position.x = 0.0
+position.y = 0.0
+texture = ExtResource( "res://assets/textures/ui/background.png" )
+scale.x = 1.0
+scale.y = 1.0
+
+[node name="Title" type="Label"]
+position.x = 400.0
+position.y = 50.0
+text = "读取存档"
+fontsize = 48
+align_horizontal = 1
+
+[node name="SaveSlotContainer" type="GridContainer"]
+position.x = 100.0
+position.y = 150.0
+size.x = 600.0
+size.y = 400.0
+columns = 3
+
+[node name="BackButton" type="Button"]
+position.x = 400.0
+position.y = 550.0
+text = "返回"
+texture_normal = ExtResource( "res://assets/textures/ui/button.png" )

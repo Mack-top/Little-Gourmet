@@ -1,0 +1,45 @@
+{
+  "cooking": {
+    "bubble_effect": {
+      "path": "res://assets/animations/cooking/bubble.anim",
+      "loop": true,
+      "duration": 2.0
+    },
+    "steam_effect": {
+      "path": "res://assets/animations/cooking/steam.anim",
+      "loop": true,
+      "duration": 3.0
+    }
+  },
+  "ui": {
+    "button_hover": {
+      "path": "res://assets/animations/ui/button_hover.anim",
+      "loop": false,
+      "duration": 0.3
+    },
+    "achievement_popup": {
+      "path": "res://assets/animations/ui/achievement_popup.anim",
+      "loop": false,
+      "duration": 1.0
+    }
+  },
+  "ingredient": {
+    "fade_in": {
+      "path": "res://assets/animations/ingredient/fade_in.anim",
+      "loop": false,
+      "duration": 0.5
+    },
+    "fade_out": {
+      "path": "res://assets/animations/ingredient/fade_out.anim",
+      "loop": false,
+      "duration": 0.5
+    }
+  },
+  "season": {
+    "transition": {
+      "path": "res://assets/animations/season/transition.anim",
+      "loop": false,
+      "duration": 2.0
+    }
+  }
+}

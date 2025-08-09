@@ -1,0 +1,232 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/i_recipe_manager.py" type="Script" id=1]
+[ext_resource path="res://assets/fonts/main_font.tres" type="DynamicFont" id=2]
+
+[node name="GameScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.88, 0.96, 0.85, 1 )
+
+[node name="Header" type="Panel" parent="."]
+anchor_right = 1.0
+margin_right = 0.0
+margin_bottom = 60.0
+
+[node name="HeaderStyle" type="StyleBoxFlat" parent="Header"]
+bg_color = Color( 0.7, 0.9, 0.6, 0.9 )
+border_color = Color( 0.6, 0.8, 0.5, 1 )
+border_width_bottom = 2
+
+[node name="PlayerInfo" type="HBoxContainer" parent="Header"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="PlayerName" type="Label" parent="PlayerInfo"]
+text = "玩家名称"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="PlayerLevel" type="Label" parent="PlayerInfo"]
+text = "等级: 1"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="PlayerExp" type="Label" parent="PlayerInfo"]
+text = "经验: 0/100"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="PlayerGold" type="Label" parent="PlayerInfo"]
+text = "金币: 100"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="MainArea" type="HBoxContainer" parent="."]
+anchor_top = 0.1
+anchor_right = 1.0
+anchor_bottom = 0.9
+margin_top = 60.0
+margin_bottom = -60.0
+
+[node name="LeftPanel" type="Panel" parent="MainArea"]
+size_flags_horizontal = 3
+custom_constants/layout_direction = 1
+
+[node name="LeftPanelStyle" type="StyleBoxFlat" parent="LeftPanel"]
+bg_color = Color( 0.9, 0.95, 0.85, 0.7 )
+border_color = Color( 0.6, 0.8, 0.5, 0.5 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="IngredientArea" type="VBoxContainer" parent="LeftPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="IngredientLabel" type="Label" parent="IngredientArea"]
+text = "食材"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="SlotContainer" type="HBoxContainer" parent="IngredientArea"]
+size_flags_vertical = 3
+
+[node name="Slot1" type="TextureRect" parent="SlotContainer"]
+expand_mode = 1
+size.x = 64.0
+size.y = 64.0
+stretch_mode = 2
+
+[node name="Slot2" type="TextureRect" parent="SlotContainer"]
+expand_mode = 1
+size.x = 64.0
+size.y = 64.0
+stretch_mode = 2
+
+[node name="Slot3" type="TextureRect" parent="SlotContainer"]
+expand_mode = 1
+size.x = 64.0
+size.y = 64.0
+stretch_mode = 2
+
+[node name="CenterPanel" type="Panel" parent="MainArea"]
+size_flags_horizontal = 3
+custom_constants/layout_direction = 1
+
+[node name="CenterPanelStyle" type="StyleBoxFlat" parent="CenterPanel"]
+bg_color = Color( 0.9, 0.95, 0.85, 0.7 )
+border_color = Color( 0.6, 0.8, 0.5, 0.5 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="CookingArea" type="VBoxContainer" parent="CenterPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="CookingLabel" type="Label" parent="CookingArea"]
+text = "烹饪锅"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+
+[node name="CookingPot" type="TextureRect" parent="CookingArea"]
+expand_mode = 1
+size.x = 128.0
+size.y = 128.0
+stretch_mode = 2
+
+[node name="RightPanel" type="Panel" parent="MainArea"]
+size_flags_horizontal = 3
+custom_constants/layout_direction = 1
+
+[node name="RightPanelStyle" type="StyleBoxFlat" parent="RightPanel"]
+bg_color = Color( 0.9, 0.95, 0.85, 0.7 )
+border_color = Color( 0.6, 0.8, 0.5, 0.5 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="ActionArea" type="VBoxContainer" parent="RightPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="RecipeBookButton" type="Button" parent="ActionArea"]
+text = "菜谱"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="DecorationButton" type="Button" parent="ActionArea"]
+text = "装饰"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="IngredientShopButton" type="Button" parent="ActionArea"]
+text = "食材商店"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="InventoryButton" type="Button" parent="ActionArea"]
+text = "库存"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="Footer" type="Panel" parent="."]
+anchor_top = 0.9
+anchor_right = 1.0
+margin_top = -60.0
+
+[node name="FooterStyle" type="StyleBoxFlat" parent="Footer"]
+bg_color = Color( 0.7, 0.9, 0.6, 0.9 )
+border_color = Color( 0.6, 0.8, 0.5, 1 )
+border_width_top = 2
+
+[node name="Navigation" type="HBoxContainer" parent="Footer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -10.0
+margin_bottom = -10.0
+
+[node name="SettingsButton" type="Button" parent="Navigation"]
+text = "设置"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="NPCChatButton" type="Button" parent="Navigation"]
+text = "聊天"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )
+
+[node name="MailButton" type="Button" parent="Navigation"]
+text = "邮件"
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.3, 0.6, 0.2, 1 )
+custom_colors/font_color_hover = Color( 0.4, 0.7, 0.3, 1 )
+custom_colors/font_color_pressed = Color( 0.2, 0.5, 0.1, 1 )

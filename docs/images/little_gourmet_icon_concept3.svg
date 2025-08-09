@@ -1,0 +1,28 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="#E0FFFF" stroke="#20B2AA" stroke-width="8"/>
+  
+  <!-- 爱心形状 -->
+  <path d="M128,60 
+           C100,40 60,60 60,90 
+           C60,120 90,140 128,170 
+           C166,140 196,120 196,90 
+           C196,60 156,40 128,60 Z" 
+        fill="#FFB6C1"/>
+  
+  <!-- 食材环绕 -->
+  <circle cx="90" cy="90" r="12" fill="#FF6347"/> <!-- 番茄 -->
+  <circle cx="166" cy="90" r="12" fill="#32CD32"/> <!-- 青菜 -->
+  <circle cx="90" cy="150" r="12" fill="#FFD700"/> <!-- 柠檬 -->
+  <circle cx="166" cy="150" r="12" fill="#FFA500"/> <!-- 橙子 -->
+  
+  <!-- 中间厨师帽 -->
+  <path d="M110,100 Q128,80 146,100 L140,115 Q128,110 116,115 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+  
+  <!-- 小勺子 -->
+  <rect x="126" y="125" width="4" height="30" fill="#C0C0C0" transform="rotate(-20 126 125)"/>
+  <ellipse cx="130" cy="125" rx="6" ry="2" fill="#C0C0C0" transform="rotate(-20 130 125)"/>
+  
+  <!-- 文字 -->
+  <text x="128" y="210" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" fill="#FF6347" font-weight="bold">小小美食家</text>
+</svg>

@@ -1,0 +1,36 @@
+// 创建全局初始化器Python接口实现工厂场景
+[gd_scene load_steps=2 format=3]
+
+[ext_resource path="res://src/global_initializer_python_interface_factory.py" type="Script" id=1]
+
+[node name="GlobalInitializerPythonInterfaceFactory" type="Node" script_ext_resource=1]
+
+// 全局初始化器Python接口实现工厂
+// 用于创建和管理全局初始化器接口实现
+
+// 初始化全局系统
+func _ready():
+    // 确保只有一个实例存在
+    if get_node("/root/GlobalInitializerPythonInterfaceFactory") != null:
+        queue_free()
+        return
+    
+    // 设置为全局节点
+    set_process(false)
+    set_physics_process(false)
+    add_to_group("global_initializer_python_interface_factory")
+
+// 获取全局初始化器接口实现实例
+static func get_global_initializer_implementation():
+    var factory = get_node("/root/GlobalInitializerPythonInterfaceFactory")
+    if not factory:
+        // 如果不存在，加载并创建
+        var scene = preload("res://assets/scenes/global_initializer_python_interface_factory.tscn")
+        factory = scene.instance()
+        get_tree().get_root().add_child(factory)
+    
+    if factory and factory.initializer_implementation:
+        return factory.initializer_implementation
+    
+    // 如果没有现成的实现，创建新的
+    return GlobalInitializerPythonInterfaceImplementation.get_instance()
