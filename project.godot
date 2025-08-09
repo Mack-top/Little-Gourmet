@@ -11,13 +11,16 @@ config_version=5
 [application]
 
 config/name="Little Gourmet"
+config/features=PackedStringArray("4.4")
 config/icon="res://icon.png"
-config/main_scene="res://client/assets/scenes/test_main.tscn"
+config/main_scene="res://client/assets/scenes/main.tscn"
 
 [physics]
+
 2d/thread_model=2
 
 [rendering]
+
 environment/default_environment/ambient_light_color=Color(0.2, 0.2, 0.2, 1)
 environment/default_environment/bg_mode=2
 environment/default_environment/background_sky_mode=1
