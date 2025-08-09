@@ -24,15 +24,15 @@ def main():
         print("请确保Godot可执行文件位于项目根目录中")
         return 1
     
-    # 检查project.godot文件是否存在
-    project_file = os.path.join(script_dir, "project.godot")
+    # 检查client/project.godot文件是否存在
+    project_file = os.path.join(script_dir, "client", "project.godot")
     if not os.path.exists(project_file):
         print(f"错误: 找不到project.godot文件: {project_file}")
-        print("请确保project.godot文件位于项目根目录中")
+        print("请确保project.godot文件位于client目录中")
         return 1
     
     # 构建命令
-    cmd = [godot_exe, "--path", script_dir]
+    cmd = [godot_exe, "--path", os.path.join(script_dir, "client")]
     
     print("正在启动Little Gourmet游戏...")
     print(f"执行命令: {' '.join(cmd)}")

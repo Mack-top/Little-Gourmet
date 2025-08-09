@@ -18,9 +18,9 @@ echo Godot executable found
 echo.
 
 echo Checking for project.godot file...
-if not exist "project.godot" (
-    echo Error: project.godot not found in current directory
-    echo Please make sure project.godot exists in the project root
+if not exist "client\project.godot" (
+    echo Error: project.godot not found in client directory
+    echo Please make sure project.godot exists in the client directory
     pause
     exit /b 1
 )
@@ -32,7 +32,7 @@ echo Starting Little Gourmet game...
 echo.
 echo Game window should appear shortly...
 echo.
-"Godot_v4.4.1-stable_win64.exe" --path .
+"Godot_v4.4.1-stable_win64.exe" --path client
 echo.
 echo Game process finished
 echo.
