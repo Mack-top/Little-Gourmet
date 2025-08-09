@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[node name="TestMain" type="Node"]
+
+[node name="Background" type="ColorRect"]
+position.x = 0.0
+position.y = 0.0
+size.x = 1024.0
+size.y = 600.0
+color = Color( 0.88, 0.96, 0.85, 1 )
+
+[node name="Label" type="Label"]
+position.x = 400.0
+position.y = 250.0
+text = "Little Gourmet Test Scene"
+align_horizontal = 1
+align_vertical = 1
