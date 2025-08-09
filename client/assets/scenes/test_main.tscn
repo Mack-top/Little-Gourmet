@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3]
 
-[node name="TestMain" type="Node"]
+[node name="TestMain" type="Node2D"]
 
 [node name="Background" type="ColorRect"]
 position.x = 0.0
