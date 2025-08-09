@@ -16,17 +16,17 @@ def run_command(command):
         result = subprocess.run(command, shell=True, check=True, 
                               stdout=subprocess.PIPE, stderr=subprocess.PIPE, 
                               text=True)
-        return result.stdout.strip()
+        return result.stdout.strip(), result.stderr.strip()
     except subprocess.CalledProcessError as e:
         print(f"命令执行失败: {command}")
         print(f"错误信息: {e.stderr}")
-        return None
+        return None, e.stderr
 
 def git_add():
     """添加所有更改到暂存区"""
     print("正在添加文件到暂存区...")
-    result = run_command("git add .")
-    if result is not None:
+    result, error = run_command("git add .")
+    if result is not None or error == "":
         print("文件添加成功")
         return True
     return False
@@ -37,17 +37,20 @@ def git_commit(message):
         message = input("请输入提交信息: ")
     
     print(f"正在提交更改: {message}")
-    result = run_command(f'git commit -m "{message}"')
-    if result is not None:
+    result, error = run_command(f'git commit -m "{message}"')
+    if result is not None or (result is None and "nothing to commit" not in error):
         print("提交成功")
+        return True
+    elif result is None and "nothing to commit" in error:
+        print("没有需要提交的更改")
         return True
     return False
 
 def git_push():
     """推送到远程仓库"""
     print("正在推送到远程仓库...")
-    result = run_command("git push origin master")
-    if result is not None:
+    result, error = run_command("git push origin master")
+    if result is not None or error == "":
         print("推送成功")
         return True
     return False
@@ -55,13 +58,13 @@ def git_push():
 def git_status():
     """检查当前 Git 状态"""
     print("检查当前状态...")
-    status = run_command("git status --porcelain")
+    status, _ = run_command("git status --porcelain")
     if status == "":
         print("没有需要提交的更改")
         return False
     else:
         print("检测到以下更改:")
-        full_status = run_command("git status")
+        full_status, _ = run_command("git status")
         print(full_status)
         return True
 
@@ -74,25 +77,30 @@ def main():
     os.chdir(project_dir)
     
     # 检查状态
-    if not git_status():
+    has_changes = git_status()
+    if not has_changes:
+        print("无需提交任何更改")
         sys.exit(0)
     
     # 添加文件
     if not git_add():
+        print("添加文件失败")
         sys.exit(1)
     
     # 获取提交信息
     if len(sys.argv) > 1:
         commit_message = " ".join(sys.argv[1:])
     else:
-        commit_message = None
+        commit_message = "自动提交"
     
     # 提交更改
     if not git_commit(commit_message):
+        print("提交失败")
         sys.exit(1)
     
     # 推送更改
     if not git_push():
+        print("推送失败")
         sys.exit(1)
     
     print("\n=== 所有操作完成 ===")
