@@ -1,10 +1,9 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=2 format=3]
 
-[node name="MainScene" type="Node3D"]
+[node name="Main" type="Node2D"]
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -10)
-current = true
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.592, 0.107, -0.799, -0, 0.991, 0.131, 0.802, -0.078, 0.592, 0, 0, 0)
+[node name="Label" type="Label"]
+position = Vector2(400, 300)
+text = "Little Gourmet - Game Started Successfully!"
+align_horizontal = 1
+align_vertical = 1
