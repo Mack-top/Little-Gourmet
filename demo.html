@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小小美食家 - Little Gourmet Demo</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #ff6b6b 0%, #ff8e8e 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .game-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 250px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+        
+        .feature-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #ff6b6b;
+        }
+        
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .screenshot {
+            width: 300px;
+            height: 200px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .cta-button {
+            display: block;
+            width: 200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: linear-gradient(90deg, #ff6b6b 0%, #ff8e8e 100%);
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .features, .screenshots {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .feature-card, .screenshot {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>小小美食家</h1>
+        <p>一款专为女性玩家设计的烹饪模拟游戏</p>
+    </header>
+    
+    <div class="container">
+        <h2 class="game-title">Little Gourmet</h2>
+        
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🍳</div>
+                <h3 class="feature-title">烹饪系统</h3>
+                <p>丰富的菜谱和食材，体验真实的烹饪过程</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏪</div>
+                <h3 class="feature-title">餐厅装饰</h3>
+                <p>个性化装饰你的厨房和餐厅，展示独特风格</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🏆</div>
+                <h3 class="feature-title">成就系统</h3>
+                <p>完成挑战解锁成就，获得特殊奖励</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">🤝</div>
+                <h3 class="feature-title">社交互动</h3>
+                <p>与朋友分享美食，参与社区活动</p>
+            </div>
+        </div>
+        
+        <h2 style="text-align: center; color: #ff6b6b; margin: 2rem 0;">游戏截图</h2>
+        
+        <div class="screenshots">
+            <div class="screenshot">主界面示意图</div>
+            <div class="screenshot">烹饪界面示意图</div>
+            <div class="screenshot">装饰界面示意图</div>
+        </div>
+        
+        <a href="#" class="cta-button">开始游戏</a>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 小小美食家开发团队. All rights reserved.</p>
+    </footer>
+</body>
+</html>
