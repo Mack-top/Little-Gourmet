@@ -56,6 +56,49 @@
 - 品牌一致性原则
 
 ## 目录结构
+
+## Git 提交流程
+
+### 标准提交流程
+
+每次对项目进行更改后，按照以下步骤提交到 Git：
+
+```bash
+# 1. 检查当前状态
+git status
+
+# 2. 添加更改的文件到暂存区
+git add .
+
+# 3. 提交更改（添加有意义的提交信息）
+git commit -m "描述您的更改内容"
+
+# 4. 推送到远程仓库
+git push origin master
+```
+
+### 使用自动提交脚本
+
+项目提供了几个自动提交脚本以简化操作：
+
+1. **Python 脚本**（跨平台）：
+   ```bash
+   python auto_commit.py "提交信息"
+   ```
+
+2. **Windows 批处理脚本**：
+   ```cmd
+   quick_commit.bat "提交信息"
+   ```
+
+3. **Bash 脚本**（Linux/Mac/Git Bash）：
+   ```bash
+   ./quick_commit.sh "提交信息"
+   ```
+
+如果未提供提交信息，脚本会提示您输入。
+
+## 测试
 ```
 Kitchen/
 ├── client/                    # 客户端代码
