@@ -1,0 +1,6 @@
+[application]
+config/name="Little Gourmet"
+config/main_scene="res://scenes/main.tscn"
+
+[physics]
+2d/thread_model=2

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="Label" type="Label"]
+position = Vector2(400, 300)
+text = "Little Gourmet - Success!"
+align_horizontal = 1
+align_vertical = 1
